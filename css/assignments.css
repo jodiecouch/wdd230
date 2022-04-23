@@ -1,0 +1,42 @@
+/*
+{
+    "Black Chocolate": "201b16", "Van Dyke Brown":"5c3e28", "Black Olive":"3a433c", "Bistre":"31251c", "French Bistre":"8e6f4f"
+}
+*/
+:root{
+    --back-color: #606962;
+}
+
+.container{
+    max-width: 50%;
+    margin:auto;
+}
+header{
+display:flex;
+background-color: var(--back-color);
+padding:1em;
+}
+header h1{
+    padding:1em;
+    /**/
+    width: 75%;
+    margin:auto;
+}
+img{
+    width:25%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #201B16;  
+    margin:1em;
+}
+main{
+   background-color: #36757c;
+    padding:2em;
+}
+footer{
+    background-color: var(--back-color);
+
+}
+.footer-wrap{
+    width:35%;
+    margin:auto;
+}
