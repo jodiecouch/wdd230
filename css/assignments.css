@@ -29,8 +29,12 @@ img{
     margin:1em;
 }
 main{
-   /*background-color: #36757c;*/
+   background-color: #36757c;
+   color:azure;
     padding:2em;
+}
+main a{
+    color:azure;
 }
 footer{
     background-color: var(--back-color);
