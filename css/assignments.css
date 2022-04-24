@@ -34,9 +34,6 @@ main{
 }
 footer{
     background-color: var(--back-color);
+    text-align: center;
 
-}
-.footer-wrap{
-    width:35%;
-    margin:auto;
 }

@@ -10,7 +10,7 @@
     />
     <title>Jodie's WDD 230 Assingments</title>
     <link rel="stylesheet" href="css/assignments.css" />
-    <script src="js/assignments.js"></script>
+    <script src="js/assignments.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -38,10 +38,11 @@
         <hr />
       </main>
       <footer>
-        <div class="footer-wrap">
-          <div>&copy;2022 &#x1F33C; Jodie Couch &#x1F33C; Idaho</div>
-          <div class="last-update">Last Updated:</div>
+        <div>
+          &copy;<span id="copyright-year"></span> &#x1F33C; Jodie Couch
+          &#x1F33C; Idaho
         </div>
+        <div id="last-update"></div>
       </footer>
     </div>
   </body>
