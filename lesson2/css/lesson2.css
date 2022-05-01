@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Gelasio',
     serif;
 }
+img{
+    max-width: 100%;
+    display: block;
+}
 header{
     text-align: center;
     
@@ -28,7 +32,7 @@ header{
 body{
     width:1080px;
     margin:auto;
-    background-color: var(--color3);   
+    background-color: var(--color4);   
    
 }
 .grid {
@@ -80,4 +84,59 @@ body{
 .grid>div {
    
     padding: 10px;
+}
+footer{
+    margin:5px;
+    padding:3px;
+    background-color: var(--color4);
+    
+    text-align: center;
+    color:var(--color5);
+    font-family: 'Gelasio',
+    serif;
+}
+@media screen and (max-width: 412px) {
+    body {
+        width: 100%;
+        margin: auto;
+        
+    
+    }
+    .grid {
+        display: block;
+    }
+    #col1,
+    #col2,
+    #col3 {
+        display: block;
+    }
+    img{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 50%;
+    }
+  
+}
+@media screen and (min-width: 413px) and (max-width:824px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+    }
+#col3{
+    grid-column: 1/3;
+}
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
