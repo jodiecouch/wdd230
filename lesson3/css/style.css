@@ -1,0 +1,36 @@
+/* Color Palettes palette 2 --hunter-green: #485a3eff; --cultured: #e8ecedff;
+--outer-space-crayola: #32403cff; --rufous: #99270aff; --dark-red: #92140cff;
+palette 1 --hunter-green: #485a3eff; --cadet-blue-crayola: #aeb8c3ff;
+--outer-space-crayola: #32403cff; --gray-web: #798287ff; --amaranth-purple:
+#a4304fff; */
+:root {
+    --color1: #485a3eff;
+    --color2: #e8ecedff;
+    --color3: #32403cff;
+    --color4: #99270aff;
+    --color5: #92140cff;
+    --color6: #aeb8c3ff;
+    --color7: #798287ff;
+    --color8: #a4304fff;
+
+    font-family: 'Gelasio', serif;
+    --nav-link-color: var(--color5);
+}
+
+a:visited {
+    color: var(--color2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color2);
+    font-family: 'Gelasio', serif;
+}
+
+body{
+    background-color: var(--color1);
+}
