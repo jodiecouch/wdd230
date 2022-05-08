@@ -1,36 +1,89 @@
-/* Color Palettes palette 2 --hunter-green: #485a3eff; --cultured: #e8ecedff;
---outer-space-crayola: #32403cff; --rufous: #99270aff; --dark-red: #92140cff;
-palette 1 --hunter-green: #485a3eff; --cadet-blue-crayola: #aeb8c3ff;
---outer-space-crayola: #32403cff; --gray-web: #798287ff; --amaranth-purple:
-#a4304fff; */
 :root {
-    --color1: #485a3eff;
-    --color2: #e8ecedff;
-    --color3: #32403cff;
-    --color4: #99270aff;
-    --color5: #92140cff;
-    --color6: #aeb8c3ff;
+    --main: #485a3eff;
+    --headers: #e8ecedff;
+    --attention: #FF9F1C; 
+    --links:#D77A61;
+    --visited: #BFB48F;
+    /*--headers:#DC965A;*/
+    --text1:#040911;
+    --back: #C3B498;
+    --color3: #32403cff;   
     --color7: #798287ff;
-    --color8: #a4304fff;
-
-    font-family: 'Gelasio', serif;
-    --nav-link-color: var(--color5);
+    
+    color: var(--text6);
+    font-family: helvetica, serif; 
+    --nav-link-color: var(--attention);
 }
-
+a:link{
+    color:var(--links);
+}
 a:visited {
+    color: var(--visited);
+}
+a.seen{
+    color:var(--visited);
+}
+/*
+.color2 {
     color: var(--color2);
+    font-family: serif;
+    font-size: x-large;
+}
+.color3 {
+    
+    font-family: arial;
+    font-size: x-large;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--color2);
-    font-family: 'Gelasio', serif;
+.color5{
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;}
+.color6 {
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+.color7{
+    
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: x-large; }
+*/
+.color4 {
+    color: #040911;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--headers);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 body{
-    background-color: var(--color1);
+    background-color: var(--main);
+    margin:2em;
+}
+.box{
+    background-color: var(--back);
+    border-style: solid;
+    display: block;
+    width: 20%;
+    margin:2em;
+}
+.loud{
+    color: var(--attention);
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    }
+nav ul li {
+    flex: 1 1 auto;
+}
+@media only screen  and (max-width:675px){
+    nav ul {
+        display:block;
+    }
 }
