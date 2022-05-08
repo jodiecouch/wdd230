@@ -14,6 +14,7 @@
     font-family: helvetica, serif; 
     --nav-link-color: var(--attention);
 }
+/*
 a:link{
     color:var(--links);
 }
@@ -22,6 +23,18 @@ a:visited {
 }
 a.seen{
     color:var(--visited);
+}
+*/
+a:link {
+    color: var(--attention);
+}
+
+a:visited {
+    color: var(--headers);
+}
+
+a.seen {
+    color: var(--headers);
 }
 /*
 .color2 {
