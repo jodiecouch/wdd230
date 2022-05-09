@@ -24,7 +24,6 @@ header h1{
     margin:auto;
 }
 img{
-    width:25%;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #201B16;  
     margin:1em;
@@ -40,5 +39,5 @@ main a{
 footer{
     background-color: var(--back-color);
     text-align: center;
-
+    color:azure;
 }
