@@ -1,0 +1,93 @@
+:root {
+    --main: #485a3eff;
+    --headers: #e8ecedff;
+    --attention: #FF9F1C;
+    --links: #D77A61;
+    --visited: #BFB48F;
+    /*--headers:#DC965A;*/
+    --text1: #040911;
+    --back: #C3B498;
+    --color3: #32403cff;
+    --color7: #798287ff;
+
+    color: var(--text6);
+    font-family: helvetica, serif;
+    --nav-link-color: var(--attention);
+}
+
+
+a:link {
+    color: var(--attention);
+}
+
+a:visited {
+    color: var(--headers);
+}
+
+a.seen {
+    color: var(--headers);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headers);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: var(--main);
+    margin: 2em;
+}
+
+nav{
+    
+    float:right;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: var(--color7);
+}
+nav ul li a:hover {  
+    background-color: var(--color3);
+}
+
+/*two lines below with javascript (toggleMenu) show and hide, rather close and expand the menu when hamburger button is clicked.*/
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+header, footer{
+    background-color: var(--back);
+    padding: 4rem;
+    margin: 1rem;
+}
+.container div {
+    background-color: var(--back);    
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;    
+}
+#hamburgerBtn{
+background-color: var(--attention);
+padding: .8rem 2vw;
+margin: 0.1rem;
+}
