@@ -1,8 +1,8 @@
 :root {
-    --main: #485a3eff;
-    --headers: #e8ecedff;
-    --attention: #FF9F1C;
-    --links: #D77A61;
+    --main: rgb(41, 54, 34);
+    --headers: rgb(255, 255, 255);
+    --attention: #f1b86e;
+    --links: #f8a188;
     --visited: #BFB48F;
     /*--headers:#DC965A;*/
     --text1: #040911;
@@ -11,6 +11,7 @@
     --color7: #798287ff;
 
     color: var(--text6);
+
     font-family: helvetica, serif;
     --nav-link-color: var(--attention);
 }
@@ -75,19 +76,59 @@ nav ul.open {
     display: block;
 }
 
-header, footer{
-    background-color: var(--back);
-    padding: 4rem;
-    margin: 1rem;
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+       
+}
+.headings h1{
+    font-size: 1rem;
+}
+ .headings h2{
+     margin-top: -.5rem;
+    font-size: .8rem;
+ }
+.social{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+ .social img{    
+     
+     width: 30px;
+     height:auto;
+ }
+#hamburgerBtn{
+background-color: var(--headers);
+padding: 1.2em;
+
+margin: 1rem;
+
+}
+
+
 .container div {
-    background-color: var(--back);    
+    background-color: var(--back);
     border: 1px solid black;
     padding: 2rem;
-    margin: 1rem;    
-}
-#hamburgerBtn{
-background-color: var(--attention);
-padding: .8rem 2vw;
-margin: 0.1rem;
+    margin: 1rem;
 }
