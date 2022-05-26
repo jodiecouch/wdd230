@@ -10,7 +10,7 @@
     --color3: #32403cff;
     --color7: #798287ff;
 
-    color: var(--text6);
+    color: var(--text1);
 
     font-family: helvetica, serif;
     --nav-link-color: var(--attention);
@@ -80,7 +80,7 @@ header footer{
 }
 header{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 3;    
     
 }
@@ -102,6 +102,7 @@ header{
     grid-row:1/2;
     grid-column: 2;
     margin-left: 1rem;
+    margin-top: .5rem;
     display: flex;
     flex-direction: column;
 }
@@ -119,14 +120,18 @@ header{
 #facebook{
     grid-row:1;
     grid-column: 3;
+    margin-left: .5rem;
+    text-align: right;
 }
 #instagram{
-    grid-row:2;
-    grid-column: 3;
+    grid-row:1;
+    grid-column: 4;
+    margin-left: .5rem;
+    text-align: left;
 }
  .social img{        
-     width: 30px;
-     height:auto;
+     max-width: 40px;
+    border-radius: 15px;
  }
 #hamburgerBtn{
 background-color: var(--headers);
@@ -140,8 +145,12 @@ margin-right: .5rem;
 
 .headerDate{
     grid-row: 3;
-    grid-column: 1/4;
+    grid-column: 1/6;
     text-align: center;
+    margin: 0 1rem ;
+    background-color: var(--main);
+    color: var(--headers);
+    font-size: .9rem;
 }
 
 
@@ -151,3 +160,10 @@ margin-right: .5rem;
     padding: 2rem;
     margin: 1rem;
 }
+
+.join {
+    display: none;
+    visibility: hidden;
+  
+}
+
