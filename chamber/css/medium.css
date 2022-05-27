@@ -30,12 +30,13 @@ grid-column: 3;
         flex-direction: row;
     }
 
+    .join {
+        display: block;
+        visibility: visible;
+        grid-row: 4;
+        grid-column: 1/4;
+    }
 }
-.join{
-    display: block;
-    visibility: visible;
-    grid-row:4;
-    grid-column: 1/4;
-}
+
 
 

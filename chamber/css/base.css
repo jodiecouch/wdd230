@@ -148,7 +148,8 @@ margin-right: .5rem;
     grid-column: 1/6;
     text-align: center;
     margin: 0 1rem ;
-    background-color: var(--main);
+    padding: .2rem 0;
+    background-color: rgba(57, 73, 49);
     color: var(--headers);
     font-size: .9rem;
 }
@@ -163,7 +164,11 @@ margin-right: .5rem;
 
 .join {
     display: none;
-    visibility: hidden;
+    
   
+}
+
+.spot3{
+    display: none;
 }
 
