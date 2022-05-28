@@ -9,6 +9,15 @@
     a.seen {
         color: var(--back);
     }
+  body{
+      max-width: 1400px ;
+  }
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3;
+
+}
     .headings1 {
         font-size: 2rem;
         margin-top: -.4rem;
@@ -16,12 +25,16 @@
     
     .headings2 {
         font-size: 1rem;
-        margin-top: -.4rem;
+        margin-top: -.8rem;
     }
     nav button {
         display: none;
     }
-    
+    nav {
+        grid-row: 1;
+        grid-column: 3;
+        text-align: right;
+    }
     nav ul{
         display: flex;
         grid-row:1;
@@ -39,18 +52,24 @@
         border:none;
         background-color: var(--main);
     }
-    #facebook {
-        grid-row: 1;
-        grid-column: 4;
-        margin-left: .5rem;
+    .social{
         text-align: right;
+        display: flex;
+        flex-direction: row;
+       
+    }
+    #facebook {
+        grid-column: 4;       
+        text-align: right;
+        margin-left: 12rem;
+        
     }
     
     #instagram {
-        grid-row: 1;
-        grid-column: 5;
-        margin-left: .5rem;
-        text-align: left;
+       grid-column: 4;
+        margin-left: 16rem;
+        margin-right: 1rem;
+        text-align: right;
     }
     
     .social img {
