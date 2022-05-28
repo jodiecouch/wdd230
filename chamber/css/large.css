@@ -12,15 +12,16 @@
   body{
       max-width: 1400px ;
   }
-header {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3;
-
-}
+    header {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr 2fr .5fr .5fr;
+        grid-template-rows: 3;
+        
+    }
     .headings1 {
         font-size: 2rem;
         margin-top: -.4rem;
+       
     }
     
     .headings2 {
@@ -52,24 +53,13 @@ header {
         border:none;
         background-color: var(--main);
     }
-    .social{
-        text-align: right;
-        display: flex;
-        flex-direction: row;
-       
-    }
+   
     #facebook {
-        grid-column: 4;       
-        text-align: right;
-        margin-left: 12rem;
-        
+        grid-column: 4;  
     }
     
     #instagram {
-       grid-column: 4;
-        margin-left: 16rem;
-        margin-right: 1rem;
-        text-align: right;
+       grid-column: 5;   
     }
     
     .social img {

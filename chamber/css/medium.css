@@ -16,6 +16,7 @@
     }
     #hamburgerBtn {
         text-align: right;
+        margin-right: 1rem;
     }
     .hero{
         grid-row:1;
