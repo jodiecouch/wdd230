@@ -85,13 +85,13 @@ header{
     
 }
 
-.logo{
+header .logo{
     /*display: flex;
     align-items: center;*/
     margin-left: 1rem;
 }
 
-.logo img {
+header .logo img {
   max-width: 100%;
   min-width: 50px;
   grid-row:1/3;

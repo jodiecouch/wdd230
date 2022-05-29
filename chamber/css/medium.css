@@ -4,7 +4,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: repeat(5, auto);
         }
-    .logo img {       
+    header .logo img {       
         min-width: 80px;        
     }
     .headings1{
