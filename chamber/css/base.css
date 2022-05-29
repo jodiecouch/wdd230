@@ -1,5 +1,6 @@
 :root {
     --main: rgb(41, 54, 34);
+    --mainlight: rgba(57, 73, 49);
     --headers: rgb(255, 255, 255);
     --attention: #f1b86e;
     --links: #f8a188;
@@ -153,7 +154,7 @@ margin-right: .5rem;
     text-align: center;
     margin: 0 1rem ;
     padding: .2rem 0;
-    background-color: rgba(57, 73, 49);
+    background-color: var(--mainlight);
     color: var(--headers);
     font-size: .9rem;
 }
@@ -176,3 +177,83 @@ margin-right: .5rem;
     display: none;
 }
 
+footer{
+    text-align: center;
+    background-color: var(--mainlight);
+    font-size:90%;
+    
+}
+
+footer .logo img{
+    max-width: 100%;
+    max-width: 100px;
+    margin-top: 1rem;
+}
+footer .logo-label{
+margin-top:0;
+padding-top:.3rem;
+
+}
+footer .address{
+margin-top:-1rem;
+}
+footer .address1{
+
+}
+footer .address2{
+margin-top:-1rem;
+}
+footer .email{
+
+}
+footer .phone{
+
+}
+.map{
+
+}
+footer .seperator {
+    display: none;
+}
+.about{
+    padding-top: 1.3rem;
+    border-top: var(--headers) solid 1px;
+    margin:0 1rem;
+}
+
+.about > *{
+    margin-top:-1rem;
+    padding:0;
+}
+#last-update{
+    padding-bottom: .5rem;
+}
+/*
+<footer>
+      <div class="logo">
+        <picture>
+          <img
+            src="images/logo.png"
+            alt="Serendepity Chamber of Commerce Logo"
+          />
+        </picture>
+      </div>
+      
+        <h3 class="logo-label">Serendepity Chamber of Commerce</h3>
+   
+      <div class="address">
+        <h5 class="address1">154 East First Str</h5>
+        <h5 class="address2">Serendepity, ID 83789</h5>
+      </div>
+      <h5 class="email">info@SerendepityCC.com</h5>
+      <h5 class="phone">208-351-2121</h5>
+
+      <h5 class="map">Map something</h5>
+      <div class="about">
+        <div class="copyright"></div>
+        <h5 class="developer">Jodie Couch</h5>
+        <h6 class="class-project">WDD 230 Chamber Project</h6>
+        <div class="change-date">Js stuff</div>
+      </div>
+    </footer>
+    */
