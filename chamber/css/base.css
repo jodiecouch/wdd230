@@ -82,7 +82,7 @@ header footer{
 header{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 3;    
+    grid-template-rows: repeat(3, auto);    
     
 }
 
@@ -197,20 +197,16 @@ padding-top:.3rem;
 footer .address{
 margin-top:-1rem;
 }
-footer .address1{
 
-}
 footer .address2{
 margin-top:-1rem;
 }
-footer .email{
 
-}
 footer .phone{
-
+    margin-top:-1rem;
 }
-.map{
-
+footer .map{
+    margin-top:-1rem;
 }
 footer .seperator {
     display: none;
