@@ -167,13 +167,25 @@ margin-right: .5rem;
     margin: 1rem;
 }
 
+.hero{
+    
+}
 .join {
     display: none;
     
   
 }
+.spot a:link{
+color: var(--main);
+}
+.spot a:visited {
+    color: var(--main);
+}
+.spot a:hover {
+    background-color: var(--headers);
+}
 
-.spot3{
+#spot3{
     display: none;
 }
 
