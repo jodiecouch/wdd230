@@ -162,8 +162,8 @@ margin-right: .5rem;
 
 .container div {
     background-color: var(--back);
-    border: 1px solid black;
-    padding: 2rem;
+    padding: .5rem;  
+  
     margin: 1rem;
 }
 
