@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <title>Lazy Loading</title>
+  </head>
+  <body>
+    <h1>Lazy Loading</h1>
+    <!-- shorthand for this is 
+(picture.lazyPic>img[src="images/placeholder300_400.png"][data-src="images/placeimg_300_400_sepia_arch"][alt="sepia image"])*6
+-->
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="sepia image"
+        data-src="images/placeimg_300_400_sepia_arch.jpg"
+    /></picture>
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="picture 2"
+        data-src="images/placeimg_300_400_sepia_arch_1.jpg"
+    /></picture>
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="sepia image"
+        data-src="images/placeimg_300_400_sepia_arch_2.jpg"
+    /></picture>
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="sepia image"
+        data-src="images/placeimg_300_400_sepia_arch_4.jpg"
+    /></picture>
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="sepia image"
+        data-src="images/placeimg_300_400_sepia_arch_5.jpg"
+    /></picture>
+    <picture class="lazyPic"
+      ><img
+        src="images/placeholder300_400.png"
+        alt="sepia image"
+        data-src="images/placeimg_300_400_sepia_arch_6.jpg"
+    /></picture>
+  </body>
+</html>
