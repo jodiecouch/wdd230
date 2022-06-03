@@ -167,9 +167,7 @@ margin-right: .5rem;
     margin: 1rem;
 }
 
-.hero{
-    
-}
+
 .join {
     display: none;
     
@@ -265,3 +263,15 @@ footer .seperator {
       </div>
     </footer>
     */
+    .discover{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .discoverImg{
+        width: 280px;
+        height: 180px;
+        margin:1px;
+        padding: 1rem;
+    }

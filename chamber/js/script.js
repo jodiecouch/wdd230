@@ -21,3 +21,4 @@ dateModified.textContent = `Last Updated: ${modifyDate}`;
 const copyright = document.querySelector('#copyright-year');
 let currentYear = today.getFullYear();
 copyright.textContent=`${currentYear}`;
+
