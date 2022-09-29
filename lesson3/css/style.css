@@ -8,24 +8,26 @@
   --color2: #dfd3c3;
   --color3: #c7b198;
   --color4: #596e79;
+  --color5: #ffffff;
+  --color6: #8d021f;
 }
 body {
   background-color: var(--color1);
 }
 header,
 footer {
-  background-color: var(--color4);
+  background-color: var(--color3);
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   padding: 0.75rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  color: white;
+  color: var(--color5);
 }
 
 nav {
-  background-color: var(--color3);
+  background-color: var(--color4);
   margin: 0 auto;
   /*max-width: 780px;*/
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
@@ -36,7 +38,7 @@ nav ul {
 }
 nav ul li a {
   display: block;
-  color: black;
+  color: var(--color5);
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
@@ -47,11 +49,17 @@ Not sure what line above does */
   transition: 0.5s;
 }
 
+.active {
+  color: var(--color3);
+}
 a:hover {
   background-color: var(--color2);
 }
 
 @media only screen and (min-width: 37.5em) {
+  header {
+    align-items: flex-start;
+  }
   h1 {
     font-size: 1.5rem;
   }
