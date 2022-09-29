@@ -54,6 +54,30 @@ Not sure what line above does */
 }
 a:hover {
   background-color: var(--color2);
+  color: var(--color6);
+}
+.color {
+  height: 100px;
+  text-align: center;
+}
+#color1 {
+  background-color: var(--color1);
+}
+#color2 {
+  background-color: var(--color2);
+}
+#color3 {
+  background-color: var(--color3);
+}
+#color4 {
+  background-color: var(--color4);
+}
+#color5 {
+  background-color: var(--color5);
+}
+#color6 {
+  background-color: var(--color6);
+  color: var(--color5);
 }
 
 @media only screen and (min-width: 37.5em) {
