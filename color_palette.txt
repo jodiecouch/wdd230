@@ -1,0 +1,13 @@
+Color Palette
+
+F0ECE2
+DFD3C3
+C7B198
+596E79
+
+rgb(240, 236, 226)
+rgb(223, 211, 195)
+rgb(199, 177, 152)
+rgb(89, 110, 121)
+
+https://colorhunt.co/palette/f0ece2dfd3c3c7b198596e79

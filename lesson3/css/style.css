@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #f0ece2;
+  --color2: #dfd3c3;
+  --color3: #c7b198;
+  --color4: #596e79;
+}
+body {
+  background-color: var(--color1);
+}
+header,
+footer {
+  background-color: var(--color4);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+nav {
+  background-color: var(--color3);
+  margin: 0 auto;
+  /*max-width: 780px;*/
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  /*background: linear-gradient(90deg, transparent, yellow, transparent) bottom /
+    var(--d, 0) 3px no-repeat;
+Not sure what line above does */
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: var(--color2);
+}
+
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /*Horizontal Menu Examples */
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+}
