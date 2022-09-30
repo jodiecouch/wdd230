@@ -47,7 +47,8 @@ Not sure what line above does */
   transition: 0.5s;
 }
 
-.target {
+.target,
+.typography {
   padding: 5rem;
 }
 
@@ -57,7 +58,12 @@ Not sure what line above does */
 .target ul {
   padding-bottom: 3rem;
 }
-
+#font-headings {
+  font-family: "Times New Roman", serif;
+}
+#font-normal {
+  font-family: tahoma, sans-serif;
+}
 .active {
   color: var(--color3);
 }
@@ -111,5 +117,10 @@ a:hover {
   }
   .target h4 {
     margin-left: 2em;
+  }
+  .typography {
+    max-width: 780px;
+    margin: auto;
+    text-align: center;
   }
 }
