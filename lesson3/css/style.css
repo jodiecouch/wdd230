@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --color1: #f0ece2;
   --color2: #dfd3c3;
@@ -35,6 +30,9 @@ nav {
 nav ul {
   list-style-type: none;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 nav ul li a {
   display: block;
@@ -49,6 +47,9 @@ Not sure what line above does */
   transition: 0.5s;
 }
 
+.target {
+  padding: 5px;
+}
 .active {
   color: var(--color3);
 }
@@ -95,5 +96,12 @@ a:hover {
   }
   nav ul li {
     flex: 1 1 auto;
+  }
+  .target {
+    max-width: 780px;
+    margin-left: 10em;
+  }
+  .target h4 {
+    margin-left: 2em;
   }
 }

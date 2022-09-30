@@ -15,3 +15,10 @@ https://colorhunt.co/palette/f0ece2dfd3c3c7b198596e79
 LOGO
 #8D021F
 https://app.logo.com/dashboard/logo_8ba7b87a-6944-4229-bd7c-fb3845f1c310/your-logo-files
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
