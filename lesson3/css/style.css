@@ -48,8 +48,16 @@ Not sure what line above does */
 }
 
 .target {
-  padding: 5px;
+  padding: 5rem;
 }
+
+.target h4 {
+  margin-bottom: -5px;
+}
+.target ul {
+  padding-bottom: 3rem;
+}
+
 .active {
   color: var(--color3);
 }
