@@ -48,7 +48,8 @@ Not sure what line above does */
 }
 
 .target,
-.typography {
+.typography,
+.plan {
   padding: 5rem;
 }
 
@@ -111,7 +112,8 @@ a:hover {
   nav ul li {
     flex: 1 1 auto;
   }
-  .target {
+  .target,
+  .plan {
     max-width: 780px;
     margin-left: 10em;
   }
