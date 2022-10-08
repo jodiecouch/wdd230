@@ -21,20 +21,19 @@ html {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1f 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1f 2fr;
   font-size: 0.5rem;
-  margin: 2vw;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   background-color: var(--color4);
   color: var(--color5);
-  align-items: center;
 }
 .logo {
   display: inline-block;
   vertical-align: middle;
 }
 nav button {
-  margin: 2vw;
+  margin: 0.5rem;
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -42,13 +41,12 @@ nav button {
 }
 nav {
   background-color: var(--color2);
-  margin: 0 1rem 1rem 1rem;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0.5rem;
   display: none;
 }
 nav ul.open {
@@ -56,11 +54,11 @@ nav ul.open {
 }
 nav ul li a {
   display: block; /* make entire block of li clickable*/
-  padding: 0.8rem 2vw;
+  padding: 0.5vh 1vh;
   text-decoration: none;
   color: var(--color6);
   border-top: 1px solid var(--color6);
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
@@ -99,7 +97,8 @@ nav ul li a:hover {
 #instagram {
   grid-row: 1;
   grid-column: 4;
-  margin-left: 0.5rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
   text-align: left;
 }
 .social img {
@@ -128,11 +127,11 @@ nav ul li a:hover {
   flex-direction: column;
 }
 .headings1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: -0.4rem;
 }
 .headings2 {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   margin-top: -0.4rem;
 }
 main div {
