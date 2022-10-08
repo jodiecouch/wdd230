@@ -14,11 +14,19 @@
   </head>
   <body>
     <header>
-      <img
+      <!--<img
         src="images/albion40x40.png"
         alt="Albion, Idaho logo"
         class="logo"
       />
+      -->
+      <img 
+      srcset="images/albion40x40.png 480w, images/albion100x100.png 800w"
+      sizes="(max-width: 600px) 480px, 800px"
+      src="images/albion40x40.png" 
+      alt="Albion, Idaho logo"
+      class="logo">
+
       <div class="headings">
         <h1 class="headings1">Albion</h1>
         <h2 class="headings2">Chamber of Commerce</h2>
@@ -55,6 +63,7 @@
       <div class="event">Event</div>
       <div class="weather">Weather</div>
       <div class="news">News</div>
+      <div class="join">Join</div>
       <div class="spotlight">
         <div>Spotlight 1</div>
         <div>Spotlight 2</div>
@@ -63,7 +72,9 @@
     </main>
     <footer>
       <img src="images/albion100x100.png" alt="Albion, Idaho logo" />
+     
            <div class="address">
+             <h4>Albion Chamber of Commerce</h4>
           <h5 class="address1">331 Normal St</h5>
           <h5 class="address2">Albion, ID 83789</h5>
         </div>
@@ -72,7 +83,7 @@
         <h5 class="email">info@albionIdaho.org</h5>
         <h5 class="phone">208-351-3331</h5>
         <h5 class="map">Map Something Here</h5>
-        <a href="https://goo.gl/maps/fmaJdgBbnENs6C357">Albion</a>
+        
       </div>
 
       <div class="about">

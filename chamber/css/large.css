@@ -1,7 +1,21 @@
 /* 64em is also 1028px when basefont is 16px*/
 
 @media only screen and (min-width: 64rem) {
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    justify-content: flex-start; /*center; or flex-end for right aligned*/
+  }
   nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+
     padding: 0.5rem 1rem;
+    background-color: var(--color2); /*how does this know what color2 is?*/
   }
 }
