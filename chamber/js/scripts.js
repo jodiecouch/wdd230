@@ -13,7 +13,7 @@ ham.onclick = toggleMenu;
 const today = new Date();
 const longDay = new Intl.DateTimeFormat("en-US",{dateStyle:"full"}).format(today);
 const headerDate = document.querySelector(".headerDate");
-headerDate.innerHTML = `<em>${longDay}</em>`;
+headerDate.innerHTML = `${longDay}`;
 
 /*last updated date*/
 let modifyDate = new Date(document.lastModified).toLocaleString();
