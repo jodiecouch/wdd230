@@ -65,6 +65,7 @@
   #last-update {
     padding-bottom: 0;
     flex-basis: 25%;
+    text-align: left;
   }
   #last-seperator {
     display: block;
