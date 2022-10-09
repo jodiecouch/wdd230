@@ -4,12 +4,14 @@
   nav {
     grid-column: 3;
   }
+
   #facebook {
-    grid-column: 4;
+    grid-column: 5;
+    margin-right: 3rem;
   }
   #instagram {
     grid-column: 5;
-    margin-left: 1rem;
+    text-align: right;
   }
   nav button {
     display: none;
