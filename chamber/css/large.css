@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 64rem) {
   nav {
-    grid-column: 3/4;
+    grid-column: 3;
   }
   #facebook {
     grid-column: 4;
@@ -14,7 +14,9 @@
   nav button {
     display: none;
   }
-
+  nav ul.open {
+    background-color: transparent;
+  }
   nav ul#primaryNav {
     display: flex;
 
@@ -28,6 +30,7 @@
     padding: 0.5rem 1rem;
     background-color: var(--color2); /*how does this know what color2 is?*/
   }
+
   main {
     grid-template-columns: 1fr 2fr 1fr;
   }
