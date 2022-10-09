@@ -58,4 +58,12 @@
     grid-column: 1;
     grid-row: 3;
   }
+
+  #last-update {
+    padding-bottom: 0;
+    flex-basis: 25%;
+  }
+  #last-seperator {
+    display: block;
+  }
 }

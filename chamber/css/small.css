@@ -175,8 +175,12 @@ footer .address2 {
 footer .phone {
   margin-top: -1rem;
 }
-footer .map {
+.map {
   margin-top: -1rem;
+}
+footer .map a {
+  text-decoration: none;
+  color: var(--color5);
 }
 footer hr {
   padding: 2vh;
