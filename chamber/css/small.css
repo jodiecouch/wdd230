@@ -109,9 +109,10 @@ nav ul li a:hover {
   text-align: center;
   margin: 0.5rem 1rem;
   padding: 0.2rem 0;
-  background-color: var(--color2); /*#748e9c;*/
-  color: black;
+  background-color: #748e9c;
+  color: var(--color5);
   font-size: 0.9rem;
+  font-weight: bolder;
 }
 
 .headings {
