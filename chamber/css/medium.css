@@ -2,6 +2,11 @@
   .logo {
     margin-left: 1vw;
   }
+  .logo-container {
+    height: 60px;
+    max-width: 60px;
+    display: block;
+  }
   .headings {
     text-align: left;
     margin-left: 0.5rem;
@@ -11,6 +16,7 @@
   }
   .headings2 {
     font-size: 1rem;
+    margin-top: -0.8rem;
   }
   #instagram {
     margin-left: 0.5rem;
@@ -23,6 +29,9 @@
   }
   nav ul li a {
     font-size: 1rem;
+  }
+  .social img {
+    max-width: 40px;
   }
   main {
     display: grid;
@@ -41,7 +50,7 @@
     display: flex;
   }
   .spotlight > div {
-    min-width: 45vw;
+    min-width: 40vw;
   }
   .join {
     display: block;

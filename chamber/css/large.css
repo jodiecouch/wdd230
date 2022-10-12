@@ -1,17 +1,29 @@
 /* 64em is also 1028px when basefont is 16px*/
 
 @media only screen and (min-width: 64rem) {
-  nav {
-    grid-column: 3;
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #facebook {
-    grid-column: 5;
-    margin-right: 3rem;
+  nav {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 2rem;
   }
-  #instagram {
-    grid-column: 5;
-    text-align: right;
+  .social {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  .logo-container {
+    height: 100px;
+    max-width: 100px;
+    display: block;
+  }
+  .headings {
+    margin-top: 2rem;
   }
   nav button {
     display: none;
@@ -21,9 +33,7 @@
   }
   nav ul#primaryNav {
     display: flex;
-
-    border-left: 1px solid rgba(0, 0, 0, 0.4);
-    justify-content: flex-start; /*center; or flex-end for right aligned*/
+    justify-content: center; /*center; or flex-end for right aligned*/
   }
   nav ul li a {
     border: none;
