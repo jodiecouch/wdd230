@@ -52,6 +52,13 @@
   .hero {
     grid-column: 2;
     grid-row: 1/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero > img {
+    background-image: url(https://jodiecouch.github.io/wdd230/chamber/images/albionIsaacLoveland.jpg);
   }
   .news {
     grid-column: 2;
