@@ -137,6 +137,20 @@ main div {
   margin: 1vh;
   padding: 2vh;
 }
+
+.weather h3 {
+  font-size: 2rem;
+  color: var(--color6);
+  text-align: center;
+  margin: 0;
+}
+
+#weather-words {
+  font-size: 2rem;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+}
 .join {
   display: none;
 }
@@ -144,6 +158,10 @@ main div {
   background-color: var(--color6);
   color: var(--color5);
   font-size: 2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  box-shadow: 10px 5px 5px rgb(182, 177, 177);
 }
 .spotlight > div {
   min-width: 15vw;

@@ -80,7 +80,10 @@
       </div>
       <div class="event">
         <picture>
-          <source media="min-width: 560px)" srcset="images/SchoolMascot.png" />
+          <source
+            media="(min-width: 1000px)"
+            srcset="images/SchoolMascot.png"
+          />
           <source
             media="min-width: 100px)"
             srcset="images/bulldog249x180.png"
@@ -95,7 +98,15 @@
         <p>Volleyball at Home 7pm Thursday</p>
         <p>Football at Bancroft 7pm Friday</p>
       </div>
-      <div class="weather">Sunny and 75</div>
+      <div class="weather">
+        <h3>Weather</h3>
+        <picture id="weather-icon">
+          <source media="min-width: 800px)" srcset="images/sunny-big.png" />
+          <source media="min-width: 280px)" srcset="images/sunny.png" />
+          <img src="images/sunny-big.png" alt="icon of expected weather" />
+        </picture>
+        <p id="weather-words">Sunny 73</p>
+      </div>
       <div class="news">
         <h2>News Release</h2>
       </div>
