@@ -63,15 +63,37 @@
     </header>
     <main>
       <div class="hero">
-        <img
-          src="
-            images/Albionmilner-hall.jpg"
-          alt="Albion Normal School"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="images/clayton-elliot.jpg"
+          />
+          <source
+            media="(min-width: 480px)"
+            srcset="images/Albionmilner-hall.jpg"
+          />
+          <img
+            src="images/Albionmilner-hall.jpg"
+            alt="Images of Albion, Idaho"
+          />
+        </picture>
       </div>
       <div class="event">
-        <img src="images/SchoolMascot.png" alt="Albion Bulldogs Mascot" />
-        <h2>Bulldogs play at home Friday at 7:00 PM</h2>
+        <picture>
+          <source media="min-width: 560px)" srcset="images/SchoolMascot.png" />
+          <source
+            media="min-width: 100px)"
+            srcset="images/bulldog249x180.png"
+          />
+          <img
+            src="images/bulldog249x180.png"
+            alt="Albion school mascot, a bulldog"
+          />
+        </picture>
+
+        <h2>Bulldogs Game Times</h2>
+        <p>Volleyball at Home 7pm Thursday</p>
+        <p>Football at Bancroft 7pm Friday</p>
       </div>
       <div class="weather">Sunny and 75</div>
       <div class="news">

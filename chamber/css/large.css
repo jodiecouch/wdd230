@@ -49,18 +49,14 @@
   .event {
     grid-column: 1;
   }
-  .hero img {
-    display: none;
-  }
+
   .hero {
     grid-column: 2;
     grid-row: 1/3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://jodiecouch.github.io/wdd230/chamber/images/albionIsaacLoveland.jpg);
   }
-
+  .hero img {
+    max-height: 700px;
+  }
   .news {
     grid-column: 2;
     grid-row: 3;
