@@ -130,7 +130,7 @@ nav ul li a:hover {
   font-size: 0.5rem;
   margin-top: -0.4rem;
 }
-main div {
+main > div {
   min-width: 20vw;
   min-height: 25vh;
   border: 1px solid;
@@ -169,7 +169,14 @@ main div {
   border-style: dotted;
   margin: 1vh;
   padding: 2vh;
+  text-align: center;
 }
+.spot-contact {
+  margin: 0;
+  padding: 0;
+  line-height: 0.5em;
+}
+
 #spot3 {
   display: none;
 }
