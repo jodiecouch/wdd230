@@ -21,6 +21,7 @@ html {
 img {
   max-width: 100%;
 }
+
 header {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
@@ -131,11 +132,9 @@ nav ul li a:hover {
   margin-top: -0.4rem;
 }
 main > div {
-  min-width: 20vw;
-  min-height: 25vh;
   border: 1px solid;
-  margin: 1vh;
-  padding: 2vh;
+  margin: 0.5vh;
+  padding: 0.5vh;
 }
 
 .weather h3 {
@@ -163,13 +162,20 @@ main > div {
   padding: 1rem;
   box-shadow: 10px 5px 5px rgb(182, 177, 177);
 }
+.spotlight > div > h2 {
+  margin: 0;
+  padding: 0;
+}
 .spotlight > div {
   min-width: 15vw;
-  min-height: 25vh;
+
   border-style: dotted;
   margin: 1vh;
   padding: 2vh;
   text-align: center;
+}
+.spot2 {
+  line-height: 0.5em;
 }
 .spot-contact {
   margin: 0;

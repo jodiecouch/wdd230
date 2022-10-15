@@ -63,27 +63,10 @@
     </header>
     <main>
       <div class="hero">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="images/clayton-elliot.jpg"
-          />
-          <source
-            media="(min-width: 480px)"
-            srcset="images/Albionmilner-hall.jpg"
-          />
-          <img
-            src="images/Albionmilner-hall.jpg"
-            alt="Images of Albion, Idaho"
-          />
-        </picture>
+        <img src="images/Albionmilner-hall.jpg" alt="Images of Albion, Idaho" />
       </div>
       <div class="event">
         <picture>
-          <source
-            media="(min-width: 1000px)"
-            srcset="images/SchoolMascot.png"
-          />
           <source
             media="min-width: 100px)"
             srcset="images/bulldog249x180.png"
@@ -100,11 +83,7 @@
       </div>
       <div class="weather">
         <h3>Weather</h3>
-        <picture id="weather-icon">
-          <source media="min-width: 800px)" srcset="images/sunny-big.png" />
-          <source media="min-width: 280px)" srcset="images/sunny.png" />
-          <img src="images/sunny-big.png" alt="icon of expected weather" />
-        </picture>
+        <img src="images/sunny.png" alt="icon of expected weather" />
         <p id="weather-words">Sunny 73</p>
       </div>
       <div class="news">
@@ -118,24 +97,41 @@
         </p>
       </div>
       <div class="spotlight">
-        <div>
+        <div id="spot1">
           <h2>Haunted Mansions of Albion</h2>
-          <img
-            src="images/HauntedMansions.png"
-            alt="Haunted mansions of Albion building"
-          />
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/normal3.jpg" />
+            <source
+              media="(min-width: 580px)"
+              srcset="images/HauntedMansions.png"
+            />
+            <img
+              src="images/HauntedMansions.png"
+              alt="Haunted Mansions of Albion"
+            />
+          </picture>
+
           <div class="spot-contact">
             <p class="address">201 Water Tower Ln</p>
             <p class="city">Albion, ID 83311</p>
             <p class="phone">208.654.1050</p>
-            <a href="https://www.hauntedalbion.com" class="spot-web"
-              >www.hauntedalbion.com/</a
-            >
           </div>
+
+          <a href="https://www.hauntedalbion.com" class="spot-web"
+            >www.hauntedalbion.com/</a
+          >
         </div>
-        <div>
+        <div id="spot2">
           <h2>Piggy Sue Barb-B-Que</h2>
-          <img src="images/PiggySue.jpg" alt="Piggy Sue food truck" />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/piggysue150.jpg"
+            />
+            <source media="(min-width: 580px)" srcset="images/piggysue.jpg" />
+            <img src="images/PiggySue.jpg" alt="Piggy Sue Food Truck" />
+          </picture>
+
           <div class="spot-contact">
             <p class="address">262 Main St</p>
             <p class="city">Albion, ID 83311</p>
@@ -146,7 +142,8 @@
           </div>
         </div>
         <div id="spot3">
-          <img src="images/pomerelleLogo.jpg" alt="Skiers at Pomerelle" />
+          <h2>Pomerelle Resort</h2>
+          <img src="images/pomerelle150.jpg" alt="Skiers at Pomerelle" />
           <div class="spot-contact">
             <p class="address">961 E Howell Canyon Rd</p>
             <p class="city">Albion, ID 83311</p>

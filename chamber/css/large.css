@@ -3,6 +3,7 @@
 @media only screen and (min-width: 64rem) {
   header {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 20px;
   }
 
   nav {
@@ -45,7 +46,11 @@
 
   main {
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+
+    overflow: hidden;
   }
+
   .event {
     grid-column: 1;
   }
@@ -54,8 +59,13 @@
     grid-column: 2;
     grid-row: 1/3;
   }
-  .hero img {
-    max-height: 700px;
+  .hero > img {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    /*object-fit: cover; will fill the div */
+    overflow: hidden;
   }
   .news {
     grid-column: 2;
@@ -65,19 +75,37 @@
     grid-column: 3;
     grid-row: 1/4;
     display: block;
+    padding: 0;
   }
   .spotlight > div {
     min-width: 20vw;
+    margin: 0;
+    padding: 0.5em;
+  }
+  .spotlight h2 {
+    font-size: 1rem;
+  }
+
+  #spot2 {
+    min-height: 200px;
   }
   #spot3 {
     display: block;
   }
+
+  .spot-contact {
+    line-height: 0.1em;
+    font-size: 0.8rem;
+  }
+
   .join {
     display: block;
     grid-column: 1;
     grid-row: 3;
   }
-
+  footer {
+    max-height: 150px;
+  }
   #last-update {
     padding-bottom: 0;
     flex-basis: 25%;
