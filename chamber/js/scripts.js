@@ -24,3 +24,15 @@ dateModified.textContent = `Last Updated: ${modifyDate}`;
 const copyright = document.querySelector('#copyright-year');
 let currentYear = today.getFullYear();
 copyright.textContent=`${currentYear}`;
+
+/*join button or banner to display certain days of week*/
+function toggleBanner(){
+    document.getElementById("banner").classList.toggle("show");
+}
+const dow = today.getDay();
+if (dow == 1 || dow == 2) {
+    const banner = document.getElementById("banner");
+    banner.textContent = `Come join us for the chamber meet and greet Wednesday at 7:00 pm.`;
+    toggleBanner();
+}
+

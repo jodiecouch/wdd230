@@ -136,7 +136,16 @@ main > div {
   margin: 0.5vh;
   padding: 0.5vh;
 }
-
+.hero button {
+  display: none;
+}
+.hero button.show {
+  display: block;
+}
+.show {
+  height: 40px;
+  background-color: var(--color5);
+}
 .weather h3 {
   font-size: 2rem;
   color: var(--color6);
