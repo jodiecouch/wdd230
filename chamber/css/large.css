@@ -3,7 +3,7 @@
 @media only screen and (min-width: 64rem) {
   header {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 20px;
+    grid-template-rows: 80px 20px;
   }
 
   nav {
@@ -71,6 +71,7 @@
     /*object-fit: cover; will fill the div */
     overflow: hidden;
   }
+
   .news {
     grid-column: 2;
     grid-row: 3;
@@ -80,11 +81,12 @@
     grid-row: 1/4;
     display: block;
     padding: 0;
+    border: none;
   }
   .spotlight > div {
     min-width: 20vw;
-    margin: 0;
-    padding: 0.5em;
+    margin: 0.2em;
+    padding: 0.6em;
   }
   .spotlight h2 {
     font-size: 1rem;

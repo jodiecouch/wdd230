@@ -136,16 +136,26 @@ main > div {
   margin: 0.5vh;
   padding: 0.5vh;
 }
-.hero button {
+
+.attention button {
   display: none;
 }
-.hero button.show {
-  display: block;
+.attention button.show {
+  display: inline-block;
+  margin: 0.5em;
+}
+.attention {
+  border: none;
+  text-align: center;
 }
 .show {
   /*toggled on and off with js*/
   height: 40px;
-  background-color: var(--color5);
+  background-color: var(--color6);
+  color: var(--color5);
+  font-size: 1rem;
+  border-radius: 15px;
+  text-align: center;
 }
 .event {
   text-align: center;
@@ -184,14 +194,16 @@ main > div {
   padding: 1rem;
   box-shadow: 10px 5px 5px rgb(182, 177, 177);
 }
+.spotlight {
+  border: none;
+}
 .spotlight > div > h2 {
   margin: 0;
   padding: 0;
 }
 .spotlight > div {
   min-width: 15vw;
-
-  border-style: dotted;
+  border: 0.2em solid var(--color4);
   margin: 1vh;
   padding: 2vh;
   text-align: center;
