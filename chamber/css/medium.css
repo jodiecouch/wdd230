@@ -46,6 +46,10 @@
   #banner {
     position: absolute;
   }
+  .event {
+    display: flex;
+  }
+
   #weather-icon {
     margin: 0 auto;
   }

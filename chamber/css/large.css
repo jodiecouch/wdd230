@@ -53,6 +53,10 @@
 
   .event {
     grid-column: 1;
+    display: block;
+  }
+  .event > h4 {
+    margin: 0.2em;
   }
 
   .hero {

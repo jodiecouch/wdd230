@@ -143,9 +143,22 @@ main > div {
   display: block;
 }
 .show {
+  /*toggled on and off with js*/
   height: 40px;
   background-color: var(--color5);
 }
+.event {
+  text-align: center;
+}
+.event > h4 {
+  margin: 0;
+}
+.event ul {
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+
 .weather h3 {
   font-size: 2rem;
   color: var(--color6);
