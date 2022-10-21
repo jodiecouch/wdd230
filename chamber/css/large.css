@@ -120,4 +120,6 @@
   #last-seperator {
     display: block;
   }
+  picture {
+   overflow: hidden;
 }

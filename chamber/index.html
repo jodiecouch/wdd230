@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
@@ -69,7 +66,20 @@
     <main>
       <div class="hero">
         <div class="attention"><button id="banner"></button></div>
-        <img src="images/Albionmilner-hall.jpg" alt="Images of Albion, Idaho" />
+        <picture>
+          <source
+            media="(max-width: 570px)"
+            srcset="images/wdd230-550x367.jpg"
+          />
+          <source
+            media="(max-width: 1024px"
+            srcset="images/wdd230-1000x400.jpg"
+          />
+          <img src="images/wdd230-600x400.jpg" alt="Place holder image" />
+        </picture>
+        <!-- my original image
+         <img src="images/Albionmilner-hall.jpg" alt="Images of Albion, Idaho" />
+       -->
       </div>
 
       <div class="event">
