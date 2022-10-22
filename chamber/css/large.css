@@ -88,12 +88,13 @@
   .spotlight > div {
     width: 25vw;
     grid-template-rows: .5fr 1fr 1fr;
-max-height: 25vh;
+    max-height: 240px;
     padding: .5em;
   }
  
   #spot3 {
     display: block;
+    padding-bottom: 1em;
   }
 
   .spot-contact {
