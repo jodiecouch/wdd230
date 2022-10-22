@@ -82,19 +82,16 @@
     display: block;
     padding: 0;
     border: none;
+    margin-top: -.3em;
+    
   }
   .spotlight > div {
-    min-width: 20vw;
-    margin: 0.2em;
-    padding: 0.6em;
+    width: 25vw;
+    grid-template-rows: .5fr 1fr 1fr;
+max-height: 25vh;
+    padding: .5em;
   }
-  .spotlight h2 {
-    font-size: 1rem;
-  }
-
-  #spot2 {
-    min-height: 200px;
-  }
+ 
   #spot3 {
     display: block;
   }

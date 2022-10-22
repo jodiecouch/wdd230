@@ -62,11 +62,17 @@
   .spotlight {
     grid-column: 1/3;
     grid-row: 3;
-    display: flex;
     border: 1px solid black;
+    display: flex;
   }
   .spotlight > div {
-    min-width: 40vw;
+    width: 50vw;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr;
+  }
+  .spotlight h3 {
+    padding: 0;
+    margin: 0;
   }
   .join {
     display: flex;
