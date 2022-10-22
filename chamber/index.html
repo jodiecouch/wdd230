@@ -18,11 +18,9 @@
     <header>
       <div class="logo">
         <img
-          srcset="images/albion40x40.png 480w, images/albion100x100.png 800w"
-          sizes="(max-width: 600px) 480px, 800px"
-          src="images/albion40x40.png"
-          alt="Albion, Idaho logo"
           class="logo-container"
+          src="images/albion100x100.png"
+          alt="Albion, Idaho logo"
         />
         <div class="headings">
           <h1 class="headings1">Albion</h1>
@@ -108,8 +106,17 @@
       </div>
       <div class="weather">
         <h3>Weather</h3>
-        <img src="images/sunny.png" alt="icon of expected weather" />
-        <p id="weather-words">Sunny 73</p>
+        <div class="temp">
+          <picture>
+            <source media="(max-width: 559px" srcset="images/sunny-big.png" />
+            <img src="images/sunny.png" alt="icon of expected weather" />
+          </picture>
+          <p id="weather-words">Sunny 73</p>
+        </div>
+        <p class="wind right row3">Wind Speed:</p>
+        <p class="wind left row3">15 mph</p>
+        <p class="wind right row4">Wind Chill:</p>
+        <p class="wind left row4">NA</p>
       </div>
       <div class="news">
         <h2>News Release</h2>

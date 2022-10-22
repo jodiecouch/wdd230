@@ -173,19 +173,47 @@ main > div {
   list-style: none;
   margin: auto;
 }
-
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 0.5em;
+}
 .weather h3 {
   font-size: 2rem;
   color: var(--color6);
   text-align: center;
   margin: 0;
+  grid-column: 1/3;
 }
-
+.temp {
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+}
+.weather img {
+  max-width: 200px;
+}
 #weather-words {
   font-size: 2rem;
   margin-top: 0;
   padding: 0;
   text-align: center;
+}
+.wind {
+  font-size: 1.25rem;
+  width: 100%;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.row3,
+.row4 {
+  margin-top: -0.5em;
 }
 .join {
   display: none;
