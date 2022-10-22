@@ -82,20 +82,22 @@
     display: block;
     padding: 0;
     border: none;
-    margin-top: -.3em;
-    
+    margin: -.3em auto;  
   }
   .spotlight > div {
-    width: 25vw;
+    max-width: 20vw;
     grid-template-rows: .5fr 1fr 1fr;
-    max-height: 240px;
-    padding: .5em;
+    max-height: 200px;
+    padding: .2em;
+    margin: .4em 0 .4em .4em;
+    
   }
  
   #spot3 {
-    display: block;
+    display: inherit;
     padding-bottom: 1em;
   }
+ 
 
   .spot-contact {
     line-height: 0.1em;
