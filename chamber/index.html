@@ -71,7 +71,7 @@
             srcset="images/wdd230-550x367.jpg"
           />
           <source
-            media="(max-width: 1024px"
+            media="(max-width: 1024px)"
             srcset="images/wdd230-1000x400.jpg"
           />
           <img src="images/wdd230-600x400.jpg" alt="Place holder image" />
@@ -82,14 +82,12 @@
       </div>
 
       <div class="event">
-        <div>
-          <img
-            src="images/bulldog249x180.png"
-            alt="Albion school mascot, a bulldog"
-            width="80"
-            id="bulldog"
-          />
-        </div>
+        <img
+          src="images/bulldog_small.png"
+          alt="Albion school mascot, a bulldog"
+          id="bulldog"
+        />
+
         <h4>Bulldogs Game Times</h4>
         <div class="games">
           <ul>
@@ -109,10 +107,15 @@
         <h3>Weather</h3>
         <div class="temp">
           <picture>
-            <source media="(max-width: 559px" srcset="images/sunny-big.png" />
-            <img src="images/sunny.png" alt="icon of expected weather" />
+            <source
+              media="(max-width: 1023px)"
+              srcset="images/cloudy128x128.png"
+            />
+            <img src="images/cloudy64x64.png" alt="icon of expected weather" />
           </picture>
-          <p id="weather-words">Sunny <span id="temperature">50</span></p>
+          <p id="weather-words">
+            Mostly Sunny <span id="temperature">50</span>
+          </p>
         </div>
         <p class="wind right row3">Wind Speed:</p>
         <p class="wind left row3"><span id="wind-speed">15</span></p>
