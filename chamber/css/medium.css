@@ -24,12 +24,7 @@
   .headerDate {
     font-size: 1rem;
   }
-  nav {
-    text-align: right;
-  }
-  nav ul li a {
-    font-size: 1rem;
-  }
+
   .social img {
     max-width: 40px;
   }
