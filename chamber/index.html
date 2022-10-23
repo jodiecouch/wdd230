@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/large.css" />
 
     <script src="js/scripts.js" defer></script>
+    <script src="js/windchill.js" defer></script>
   </head>
   <body>
     <header>
@@ -111,12 +112,12 @@
             <source media="(max-width: 559px" srcset="images/sunny-big.png" />
             <img src="images/sunny.png" alt="icon of expected weather" />
           </picture>
-          <p id="weather-words">Sunny 73</p>
+          <p id="weather-words">Sunny <span id="temperature">50</span></p>
         </div>
         <p class="wind right row3">Wind Speed:</p>
-        <p class="wind left row3">15 mph</p>
+        <p class="wind left row3"><span id="wind-speed">15</span></p>
         <p class="wind right row4">Wind Chill:</p>
-        <p class="wind left row4">NA</p>
+        <p class="wind left row4" id="wind-chill">NA</p>
       </div>
       <div class="news">
         <h2>News Release</h2>
