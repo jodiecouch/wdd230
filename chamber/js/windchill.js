@@ -5,8 +5,6 @@ let tempValue = temp.innerHTML;
 let speedValue = speed.innerHTML;
 
 function windChill(t, s){
-    console.log(t);
-    console.log(s);
     let c = 'NA'
     if ( t <= 50 && s > 3.0) {
         const r = Math.pow(s, .16);
