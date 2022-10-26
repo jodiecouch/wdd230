@@ -1,0 +1,28 @@
+body {
+  background-image: url(clouds.jpg);
+}
+.box {
+  height: 100vh;
+  width: 100vw;
+}
+.box > img {
+  animation: drift 20s infinite;
+}
+/* makes a shadow
+.shape {
+  width: 100px;
+  margin: auto;
+  height: 6px;
+  background: #000;
+  filter: blur(9px);
+}
+*/
+
+@keyframes drift {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
