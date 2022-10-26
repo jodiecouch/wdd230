@@ -1,0 +1,14 @@
+main {
+  margin: 0 auto;
+  width: 450px;
+}
+img {
+  max-width: 100%;
+}
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  filter: blur(0em);
+}
