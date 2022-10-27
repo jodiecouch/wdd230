@@ -230,6 +230,17 @@ main > div {
   padding: 1rem;
   box-shadow: 10px 5px 5px rgb(182, 177, 177);
 }
+.news {
+  padding: 0 1em;
+}
+.news h2 {
+  color: var(--color6);
+  text-align: center;
+  margin: 0.5em auto 0.2em auto;
+}
+.news p {
+  margin-top: 0.2em;
+}
 .spotlight {
   border: none;
 }

@@ -85,19 +85,22 @@
     text-align: left;
     font-size: 100%;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1.5fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 10px;
   }
   footer > div {
     margin: 0;
     padding: 0;
   }
-
-  .find-us {
-    grid-column: 3;
-    margin-top: -1rem;
+  .footer-logo {
+    display: flex;
   }
-
+  #footer-address {
+    padding-left: 1em;
+  }
+  .email {
+    margin-top: 0.5em;
+  }
   footer .seperator {
     display: block;
   }
