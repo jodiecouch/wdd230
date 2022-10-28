@@ -352,3 +352,16 @@ footer .seperator {
     text-align: left;
   }
 }
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.discoverImg {
+  width: 280px;
+  height: 180px;
+  margin: 1px;
+  padding: 1rem;
+}
