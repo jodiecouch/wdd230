@@ -367,3 +367,6 @@ footer .seperator {
   margin: 2em 0;
   padding: 0;
 }
+.blurb {
+  border: none;
+}
