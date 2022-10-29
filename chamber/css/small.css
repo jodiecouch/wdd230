@@ -360,8 +360,10 @@ footer .seperator {
   align-items: center;
 }
 .discoverImg {
-  width: 280px;
-  height: 180px;
-  margin: 1px;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.discover figure {
+  margin: 2em 0;
+  padding: 0;
 }

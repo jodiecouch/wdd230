@@ -154,9 +154,6 @@
   }
 
   .discover {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(auto, 200px);
-    column-gap: 1rem;
+    grid-template-rows: auto;
   }
 }
