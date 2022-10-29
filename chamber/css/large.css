@@ -152,8 +152,24 @@
   picture {
     overflow: hidden;
   }
-
   .discover {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
     grid-template-rows: auto;
+    column-gap: 1rem;
+  }
+  #ski-blurb {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #ski-fig {
+    grid-column: 2;
+  }
+  #normal-blurb {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  #normal-fig {
+    grid-column: 2;
   }
 }

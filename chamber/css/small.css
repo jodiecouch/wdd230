@@ -358,6 +358,7 @@ footer .seperator {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 400px;
 }
 .discoverImg {
   margin: 0;
@@ -369,4 +370,10 @@ footer .seperator {
 }
 .blurb {
   border: none;
+  margin-top: -2em;
+  max-width: 400px;
+}
+
+.discover * figcaption {
+  max-width: 400px;
 }

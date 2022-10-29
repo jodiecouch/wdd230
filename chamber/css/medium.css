@@ -129,11 +129,4 @@
   #last-seperator {
     display: none;
   }
-
-  .discover {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-
-    column-gap: 1rem;
-  }
 }
