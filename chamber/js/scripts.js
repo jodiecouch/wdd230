@@ -85,3 +85,4 @@ else{
 }
 
 visits++;
+window.localStorage.setItem('visits-ls', visits);
