@@ -154,6 +154,7 @@
   picture {
     overflow: hidden;
   }
+  /************** DISCOVER PAGE SPECIFIC **********************/
   .discover {
     display: grid;
     grid-template-columns: repeat(2, 400px);
@@ -174,4 +175,9 @@
   #normal-fig {
     grid-column: 2;
   }
+  #visit-seperator {
+    display: block;
+  }
+
+  /******* END DISCOVER PAGE ******/
 }

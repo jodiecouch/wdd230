@@ -353,6 +353,7 @@ footer .seperator {
   }
 }
 
+/************** DISCOVER PAGE SPECIFIC **********************/
 .discover {
   display: flex;
   flex-direction: column;
@@ -377,3 +378,8 @@ footer .seperator {
 .discover * figcaption {
   max-width: 400px;
 }
+
+#visit-seperator {
+  display: none;
+}
+/****** END DISCOVER PAGE *****/

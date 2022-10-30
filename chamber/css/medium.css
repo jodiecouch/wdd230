@@ -130,4 +130,10 @@
   #last-seperator {
     display: none;
   }
+  /************** DISCOVER PAGE SPECIFIC **********************/
+  .discoverImg:hover {
+    box-shadow: 0 0 50px rgb(102, 55, 55);
+    filter: blur(1px) grayscale(50%);
+  }
+  /*********** END DISCOVER PAGE ***********/
 }

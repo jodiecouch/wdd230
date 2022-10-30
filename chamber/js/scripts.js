@@ -72,3 +72,16 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+/* code for visit counter */
+const visitLabel = document.querySelector(".visits-label");
+
+let visits = Number(window.localStorage.getItem("visits-ls"));
+
+if (visits !== 0){
+    visitLabel.innerHTML = `Welcome back. Visit number: ${visits}`;
+}
+else{
+   visitLabel.innerHTML =  'Welcome. This is your first visit.';   
+}
+
+visits++;
