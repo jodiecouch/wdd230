@@ -8,6 +8,17 @@ body {
 .box > img {
   animation: drift 20s infinite;
 }
+
+@keyframes drift {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/** use with ball example**/
 /* makes a shadow
 .shape {
   width: 100px;
@@ -18,11 +29,11 @@ body {
 }
 */
 
-@keyframes drift {
-  0% {
-    transform: translateY(100vh);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
+a {
+  color: rgb(124, 7, 7);
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: white;
 }
