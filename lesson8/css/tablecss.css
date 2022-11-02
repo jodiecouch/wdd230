@@ -34,3 +34,8 @@ caption {
   color: var(--color1);
   text-align: left;
 }
+
+#winner {
+  background-color: var(--color1);
+  color: white;
+}
