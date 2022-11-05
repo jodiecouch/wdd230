@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/large.css" />
 
     <script src="js/scripts.js" defer></script>
-    <script src="js/windchill.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,61 +51,108 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="#">Join</a></li>
+          <li><a href="join.html">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <div class="headerDate">Header Date Goes Here</div>
     </header>
-    <main>
+    <main id="joinPage">
       <form method="get" action="thankyou.html">
         <fieldset>
           <legend>Contact Information</legend>
 
-          <label for="fName" class="top"
+          <label class="top"
             >First Name* <input type="text" name="fName" required
           /></label>
-          <label for="lName" class="top"
+          <label class="top"
             >Last Name* <input type="text" name="lName" required /></label
-          ><label for="title" class="top"
+          ><label class="top"
             >Position or Title*****<input
               type="text"
               name="title"
-              required /></label
-          ><label for="email" class="top"
-            >Email<input type="email" name="email" /></label
-          ><label for="cell" class="top"
+              pattern="[A-Za-z\s\-]{7,}"
+              title="minimum length of 7 characters" /></label
+          ><label class="top">Email<input type="email" name="email" /></label
+          ><label class="top"
             >Cell Phone*<input type="tel" name="cell" required
           /></label>
         </fieldset>
         <fieldset>
           <legend>Business Information</legend>
 
-          <label for="busName" class="top">
+          <label class="top">
             Business Name*<input type="text" name="busName" required
           /></label>
-          <label for="bDescription" class="top"
+          <label class="top"
             >Business Description
             <textarea name="bDescription" rows="4"></textarea>
           </label>
 
-          <label for="formDate"><input type="hidden" name="" /></label>
+          <label><input type="hidden" name="formDate" id="formDate" /></label>
         </fieldset>
-        <fieldset id="membership-fs">
+        <fieldset>
           <legend>Membership Level</legend>
-
-          <label class="sbs"
-            ><input type="radio" name="membership" value="1" />Non Profit</label
-          >
-          <label class="sbs"
-            ><input type="radio" name="membership" value="2" />Bronze</label
-          >
-          <label class="sbs"
-            ><input type="radio" name="membership" value="3" />Silver</label
-          >
-          <label class="sbs"
-            ><input type="radio" name="membership" value="4" />Gold</label
-          >
+          <div class="memberLevel">
+            <label class="sbs"
+              ><input type="radio" name="membership" value="1" />Non Profit
+            </label>
+            <div class="membership">
+              <ul>
+                <li>Free to non profit organizations</li>
+                <li>3 guest attend annual banquet</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>Wait theres more</li>
+              </ul>
+            </div>
+          </div>
+          <div class="memberLevel">
+            <label class="sbs"
+              ><input type="radio" name="membership" value="2" />Bronze
+            </label>
+            <div class="membership">
+              <ul>
+                <li>$1000 Annually</li>
+                <li>3 guest attend annual banquet</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>Wait theres more</li>
+              </ul>
+            </div>
+          </div>
+          <div class="memberLevel">
+            <label class="sbs"
+              ><input type="radio" name="membership" value="3" />Silver
+            </label>
+            <div class="membership">
+              <ul>
+                <li>$3000 Annually</li>
+                <li>3 guest attend annual banquet</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>Wait theres more</li>
+              </ul>
+            </div>
+          </div>
+          <div class="memberLevel">
+            <label class="sbs"
+              ><input type="radio" name="membership" value="4" />Gold
+            </label>
+            <div class="membership">
+              <ul>
+                <li>$5000 Annually</li>
+                <li>3 guest attend annual banquet</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>another item</li>
+                <li>Wait theres more</li>
+              </ul>
+            </div>
+          </div>
         </fieldset>
         <input
           type="submit"

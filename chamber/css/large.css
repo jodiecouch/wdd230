@@ -180,4 +180,18 @@
   }
 
   /******* END DISCOVER PAGE ******/
+  /********* Join chamber page *********/
+  #joinPage form fieldset {
+    max-width: 60rem;
+  }
+  #joinPage .memberLevel {
+    display: flex;
+  }
+  #joinPage .membership {
+    display: inline;
+  }
+  #joinPage .memberLevel label.sbs {
+    display: inline-block;
+  }
+  /****end join page ***/
 }

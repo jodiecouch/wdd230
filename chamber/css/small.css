@@ -385,10 +385,15 @@ footer .seperator {
 /****** END DISCOVER PAGE *****/
 
 /************ JOIN PAGE ************/
-form fieldset {
+#joinPage {
+  display: block;
+}
+
+#joinPage form fieldset {
   margin: 1em;
   border-radius: 10px;
   border: 1px solid var(--color4);
+  max-width: 30rem;
 }
 form legend {
   font-size: 1.2rem;
@@ -440,4 +445,7 @@ form label.top input:required {
 }
 form label.top input:required:valid {
   border: 1px solid var(--color4);
+}
+#joinPage .membership {
+  display: none;
 }
