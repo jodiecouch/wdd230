@@ -136,4 +136,13 @@
     filter: blur(1px) grayscale(50%);
   }
   /*********** END DISCOVER PAGE ***********/
+
+  /**THANK YOU PAGE***/
+  #thanks {
+    display: block;
+  }
+  #thanks p {
+    margin: 0.5em auto;
+    width: 550px;
+  }
 }

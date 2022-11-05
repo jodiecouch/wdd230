@@ -25,6 +25,12 @@ const copyright = document.querySelector('#copyright-year');
 let currentYear = today.getFullYear();
 copyright.textContent=`${currentYear}`;
 
+/*formDate on join.html */
+if ( document.querySelector('#formDate')){
+  document.querySelector('#formDate').value =  `${today}`;
+  /*console.log(`${today}`)*/
+}
+
 /*join button or banner to display certain days of week*/
 function toggleBanner(){
     /*document.getElementById("banner").classList.toggle("show");*/
@@ -73,6 +79,7 @@ if ("IntersectionObserver" in window) {
 }
 
 /* code for visit counter */
+if (document.querySelector(".visits-label")){
 const visitLabel = document.querySelector(".visits-label");
 
 let visits = Number(window.localStorage.getItem("visits-ls"));
@@ -86,3 +93,6 @@ else{
 
 visits++;
 window.localStorage.setItem('visits-ls', visits);
+}
+
+

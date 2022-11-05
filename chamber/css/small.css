@@ -449,3 +449,10 @@ form label.top input:required:valid {
 #joinPage .membership {
   display: none;
 }
+
+/**THANK YOU PAGE***/
+#thanks p {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1.2rem;
+}
