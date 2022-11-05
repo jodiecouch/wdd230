@@ -191,6 +191,7 @@
     display: inline;
   }
   #joinPage .memberLevel label.sbs {
+    width: 10rem;
     display: inline-block;
   }
   /****end join page ***/
