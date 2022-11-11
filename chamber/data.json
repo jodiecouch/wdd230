@@ -6,7 +6,7 @@
             "phone": "(208) 673-5352",
             "website": "https://www.albionidaho.org/",
             "logo": "images/city_of_albion.png",
-            "image": ,
+            "image": "images/city_of_albion.jpg" ,
             "membership": "0"
 
         },
@@ -25,8 +25,8 @@
             "address" : "200 W Market St, Albion, ID 83311",
             "phone": "(208) 673-5301",
             "website": "https://www.dlevans.com/",
-            "logo": ,
-            "image": ,
+            "logo": "images/dl_evans_logo.webp",
+            "image": "images/DLEvans400x249.jpg" ,
             "membership":"2"
 
         },
@@ -36,7 +36,7 @@
             "phone": "(208) 673-5335",
             "website": "https://www.atcnet.net/",
             "logo":"images/atc-logo-small-2022.png" ,
-            "image": ,
+            "image": "images/atc.jpg" ,
             "membership": "3"
 
         },
@@ -66,7 +66,7 @@
             "phone": "(208) 673-5599",
             "website": "https://www.pomerelle.com/" ,
             "logo": "images/pomerelleLogo.jpg",
-            "image": ,
+            "image": "images/pomerelle400x265.jpg",
             "membership": "3"
 
         },
@@ -85,18 +85,19 @@
             "address": "883 ID-77, Albion, ID 83311",
             "phone": "(208) 673-6666",
             "website": "https://www.creeksiderestaurant.com/menu",
-            "logo": ,
-            "image": ,
-            "membership":
+            "logo": "images/creekside_logo.png",
+            "image": "images/creekside.jpg" ,
+            "membership": "1"
 
         },
          {
-            "name": ,
-            "address": ,
-            "website": ,
-            "logo": ,
-            "image": ,
-            "membership":
+            "name": "Mast General Store" ,
+            "address": "250 Main St, Albion, ID 83311" ,
+            "phone": "(208) 673-9559",
+            "website": "https://www.mastgeneralstore.com/",
+            "logo": "images/mast_logo.png",
+            "image": "images/grovery.jpg",
+            "membership": "1"
 
         }
     ]
