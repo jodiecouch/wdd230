@@ -56,7 +56,7 @@
     grid-column: 1;
     display: block;
   }
-  .event > h4 {
+  .event > p {
     margin: 0.2em;
   }
   #bulldog {
@@ -195,4 +195,31 @@
     display: inline-block;
   }
   /****end join page ***/
+
+  /** Directory page **/
+  #directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.2em;
+  }
+  #directory > .card {
+    display: flex;
+    align-items: center;
+  }
+  .cardDetail3 {
+    display: grid;
+    gap: 0.2em;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .cardDetail3 > p {
+    margin: 0.2em;
+  }
+  .cardTitle {
+    grid-column: 1/3;
+  }
+  .cardSite {
+    grid-column: 1/3;
+  }
 }
