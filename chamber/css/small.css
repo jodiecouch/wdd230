@@ -459,17 +459,18 @@ form label.top input:required:valid {
 
 /** Directory page **/
 .card,
-.card2,
-.card3 {
+.card2 {
   background-color: var(--color2);
   border: 2px solid var(--color4);
-
   text-align: center;
-
   border-radius: 10px;
   box-shadow: 1px 1px 4px 1px #888;
   overflow: hidden;
 }
-#directory h3 {
+#directory img {
+  border-radius: 10px;
+}
+#directory .cardTitle {
   color: var(--color6);
+  font-size: 1.2rem;
 }

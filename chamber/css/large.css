@@ -203,18 +203,15 @@
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.2em;
   }
-  #directory > .card {
+
+  /*side detail
+   #directory > .card {
     display: flex;
     align-items: center;
   }
-  .cardDetail3 {
-    display: grid;
-    gap: 0.2em;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .cardDetail3 > p {
-    margin: 0.2em;
+  */
+  .cardDetail {
+    margin: 0.3em;
   }
   .cardTitle {
     grid-column: 1/3;

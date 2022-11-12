@@ -4,13 +4,12 @@ const directory = document.querySelector('.directory');
 fetch(data)
   .then(response => response.json())
   .then(json => {
-    console.log(json)
+    /*console.log(json)*/
    const members = json['directory'];
    members.forEach(displayMembers);
 });
 
 function displayMembers(member){
-    console.log(member.name);
    /* add div.card*/
     let card = document.createElement('div');
     card.classList.add('card');
@@ -33,11 +32,35 @@ function displayMembers(member){
             p.cardAddress
             p.cardPhone
             */
-
+/*cardDetail*/
     let detailDiv = document.createElement('div');
     detailDiv.classList.add('cardDetail');
+/*title = member name*/
+    let title = document.createElement('p');
+    title.classList.add('cardTitle');
+    title.innerText = member.name;
+    detailDiv.appendChild(title);
+/*add website*/
+     let site = document.createElement('p');
+    site.classList.add('cardSite');       
 
-    let titleP = document.createElement('p');
+    let link = document.createElement('a');
+    link.setAttribute('href', member.website);
+    link.setAttribute('target', 'blank');
+    link.innerText = 'Visit Website';
+    site.appendChild(link);
+    detailDiv.appendChild(site);
+/* add address */
+    let address = document.createElement('p');
+    address.classList.add('cardAddress');
+    address.innerText = member.address;
+    detailDiv.appendChild(address);
+
+/*add phone */
+    let phone = document.createElement('p')
+    phone.classList.add('cardPhone');
+    phone.innerText = member.phone;
+    detailDiv.appendChild(phone);
 
     card.appendChild(detailDiv);
     document.getElementById('directory').appendChild(card);

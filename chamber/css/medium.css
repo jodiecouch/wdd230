@@ -145,4 +145,13 @@
     margin: 0.5em auto;
     width: 550px;
   }
+
+  /*Directory page */
+  #directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #directory img {
+    height: 250px;
+  }
 }
