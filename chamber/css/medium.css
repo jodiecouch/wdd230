@@ -147,11 +147,16 @@
   }
 
   /*Directory page */
-  #directory {
+  #directory.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  #directory img {
-    max-height: 200px;
+  #directory.grid img {
+    height: 200px;
+  }
+
+  #directory.list {
+    display: block;
+    text-align: center;
   }
 }

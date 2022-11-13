@@ -480,6 +480,9 @@ form label.top input:required:valid {
 }
 #directory.list .cardDetail {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: var(--color4);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#directory.list .cardTitle {
+  color: var(--color6);
+  font-size: 1em;
 }

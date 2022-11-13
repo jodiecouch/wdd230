@@ -48,18 +48,14 @@ function displayMembers(member){
 /*title = member name*/
     let title = document.createElement('p');
     title.classList.add('cardTitle');
-    title.innerText = member.name;
-    detailDiv.appendChild(title);
+    
 /*add website*/
-     let site = document.createElement('p');
-    site.classList.add('cardSite');       
-
     let link = document.createElement('a');
     link.setAttribute('href', member.website);
     link.setAttribute('target', 'blank');
-    link.innerText = 'Visit Website';
-    site.appendChild(link);
-    detailDiv.appendChild(site);
+    link.innerText = member.name;
+    title.appendChild(link);
+    detailDiv.appendChild(title);
 /* add address */
     let address = document.createElement('p');
     address.classList.add('cardAddress');
