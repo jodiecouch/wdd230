@@ -1,5 +1,21 @@
 const data = 'data.json';
-const directory = document.querySelector('.directory');
+const directory = document.querySelector('#directory');
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	directory.classList.add("grid");
+	directory.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	directory.classList.add("list");
+	directory.classList.remove("grid");
+}
 
 fetch(data)
   .then(response => response.json())
@@ -25,13 +41,7 @@ function displayMembers(member){
     image.setAttribute('alt', `Image for ${member.name}`);
     image.setAttribute('loading', 'lazy');
     imgDiv.appendChild(image);
-
-    /* Add div.cardDetail
-            p.cardTitle
-            p.cardSite
-            p.cardAddress
-            p.cardPhone
-            */
+    
 /*cardDetail*/
     let detailDiv = document.createElement('div');
     detailDiv.classList.add('cardDetail');

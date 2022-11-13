@@ -458,7 +458,7 @@ form label.top input:required:valid {
 }
 
 /** Directory page **/
-.card,
+#directory.grid .card,
 .card2 {
   background-color: var(--color2);
   border: 2px solid var(--color4);
@@ -467,10 +467,19 @@ form label.top input:required:valid {
   box-shadow: 1px 1px 4px 1px #888;
   overflow: hidden;
 }
-#directory img {
+#directory.grid img {
   border-radius: 10px;
 }
-#directory .cardTitle {
+#directory.grid .cardTitle {
   color: var(--color6);
   font-size: 1.2rem;
+}
+
+#directory.list .cardImage {
+  display: none;
+}
+#directory.list .cardDetail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: var(--color4);
 }
