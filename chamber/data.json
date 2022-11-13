@@ -31,6 +31,16 @@
 
         },
          {
+            "name": "Mast General Store" ,
+            "address": "250 Main St, Albion, ID 83311" ,
+            "phone": "(208) 673-9559",
+            "website": "https://www.mastgeneralstore.com/",
+            "logo": "images/mast_logo.png",
+            "image": "images/grocery.jpg",
+            "membership": "1"
+
+        },
+         {
             "name": "ATC Communications",
             "address": "225 West St, Albion, ID 83311",
             "phone": "(208) 673-5335",
@@ -89,16 +99,7 @@
             "image": "images/creekside.jpg" ,
             "membership": "1"
 
-        },
-         {
-            "name": "Mast General Store" ,
-            "address": "250 Main St, Albion, ID 83311" ,
-            "phone": "(208) 673-9559",
-            "website": "https://www.mastgeneralstore.com/",
-            "logo": "images/mast_logo.png",
-            "image": "images/grocery.jpg",
-            "membership": "1"
-
         }
+        
     ]
 }
