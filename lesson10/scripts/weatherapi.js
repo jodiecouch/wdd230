@@ -33,3 +33,5 @@ function  displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 }
+
+//give credit to https://openweathermap.org/ anywhere you use the weather api!!!!!!!!!!!!!
