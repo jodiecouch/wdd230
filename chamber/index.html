@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/large.css" />
 
     <script src="js/scripts.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="js/weather.js" defer></script>
   </head>
   <body>
     <header>
@@ -107,19 +107,24 @@
       <div class="weather">
         <h3>Weather</h3>
         <div class="temp">
-          <picture>
+          <!--<picture>
             <source
               media="(max-width: 1023px)"
               srcset="images/cloudy128x128.png"
             />
             <img src="images/cloudy64x64.png" alt="icon of expected weather" />
           </picture>
+        -->
+          <figure>
+            <img src="" alt="" id="weather-icon" />
+            <figcaption id="weather-caption"></figcaption>
+          </figure>
           <p id="weather-words">
-            Mostly Sunny <span id="temperature">50</span>
+            <span id="temperature"></span>
           </p>
         </div>
         <p class="wind right row3">Wind Speed:</p>
-        <p class="wind left row3"><span id="wind-speed">15</span></p>
+        <p class="wind left row3"><span id="wind-speed"></span></p>
         <p class="wind right row4">Wind Chill:</p>
         <p class="wind left row4" id="wind-chill">NA</p>
       </div>
@@ -264,6 +269,8 @@
         <p class="developer">Jodie Couch</p>
         <div class="seperator">|</div>
         <p class="class-project">WDD 230 Project</p>
+        <div class="seperator">|</div>
+        <p>Weather provided by openweathermap.org</p>
         <div class="seperator" id="last-seperator">|</div>
         <p id="last-update"></p>
       </div>
