@@ -74,14 +74,7 @@
     /*object-fit: cover; will fill the div */
     overflow: hidden;
   }
-  .wind {
-    font-size: 1rem;
-  }
 
-  .row3,
-  .row4 {
-    margin-top: -0.5em;
-  }
   .news {
     grid-column: 2;
     grid-row: 3;

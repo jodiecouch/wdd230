@@ -107,26 +107,17 @@
       <div class="weather">
         <h3>Weather</h3>
         <div class="temp">
-          <!--<picture>
-            <source
-              media="(max-width: 1023px)"
-              srcset="images/cloudy128x128.png"
-            />
-            <img src="images/cloudy64x64.png" alt="icon of expected weather" />
-          </picture>
-        -->
-          <figure>
-            <img src="" alt="" id="weather-icon" />
-            <figcaption id="weather-caption"></figcaption>
-          </figure>
+          <img src="" alt="" id="weather-icon" />
+
           <p id="weather-words">
             <span id="temperature"></span>
+            <sup class="degree">&#x2109;</sup>
           </p>
         </div>
-        <p class="wind right row3">Wind Speed:</p>
-        <p class="wind left row3"><span id="wind-speed"></span></p>
-        <p class="wind right row4">Wind Chill:</p>
-        <p class="wind left row4" id="wind-chill">NA</p>
+        <p id="weather-caption"></p>
+        <p class="wind">Wind Speed: <span id="wind-speed"></span></p>
+
+        <p class="wind">Wind Chill:<span id="wind-chill"> NA</span></p>
       </div>
       <div class="news">
         <h2>Albion on TV</h2>
@@ -270,7 +261,15 @@
         <div class="seperator">|</div>
         <p class="class-project">WDD 230 Project</p>
         <div class="seperator">|</div>
-        <p>Weather provided by openweathermap.org</p>
+        <p>
+          Weather provided by
+          <a
+            id="weather-credit"
+            href="https://openweathermap.org/"
+            target="blank"
+            >OpenWeatherMap</a
+          >
+        </p>
         <div class="seperator" id="last-seperator">|</div>
         <p id="last-update"></p>
       </div>
