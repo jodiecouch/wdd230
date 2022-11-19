@@ -174,9 +174,14 @@
 
   /******* END DISCOVER PAGE ******/
   /********* Join chamber page *********/
-  #joinPage form fieldset {
-    max-width: 60rem;
+  #joinPage form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
+  #joinPage form fieldset {
+    max-width: 50rem;
+  }
+
   #joinPage .memberLevel {
     display: flex;
   }

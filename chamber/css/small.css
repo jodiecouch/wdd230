@@ -394,7 +394,7 @@ footer .seperator {
   margin: 1em;
   border-radius: 10px;
   border: 1px solid var(--color4);
-  max-width: 30rem;
+  max-width: 25rem;
 }
 form legend {
   font-size: 1.2rem;
@@ -428,6 +428,10 @@ form label.sbs {
 }
 form label.sbs input[type="radio"] {
   margin: 0 0.5em;
+  width: 20px;
+  height: 20px;
+  transform: translateY(0.4em); /*trying to center the button with the text*/
+  accent-color: var(--color4);
 }
 
 #btnJoin {

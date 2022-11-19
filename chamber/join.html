@@ -59,43 +59,45 @@
     </header>
     <main id="joinPage">
       <form method="get" action="thankyou.html">
-        <fieldset>
-          <legend>Contact Information</legend>
+        <div>
+          <fieldset>
+            <legend>Contact Information</legend>
 
-          <label class="top"
-            >First Name* <input type="text" name="fName" required
-          /></label>
-          <label class="top"
-            >Last Name* <input type="text" name="lName" required /></label
-          ><label class="top"
-            >Position or Title<input
-              type="text"
-              name="title"
-              pattern="[A-Za-z\s\-]{7,}"
-              title="minimum length of 7 characters" /></label
-          ><label class="top"
-            >Email<input
-              type="email"
-              name="email"
-              required
-              placeholder="johnsmith@abc.com" /></label
-          ><label class="top"
-            >Cell Phone*<input type="tel" name="cell" required
-          /></label>
-        </fieldset>
-        <fieldset>
-          <legend>Business Information</legend>
+            <label class="top"
+              >First Name* <input type="text" name="fName" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="lName" required /></label
+            ><label class="top"
+              >Position or Title<input
+                type="text"
+                name="title"
+                pattern="[A-Za-z\s\-]{7,}"
+                title="minimum length of 7 characters" /></label
+            ><label class="top"
+              >Email<input
+                type="email"
+                name="email"
+                required
+                placeholder="johnsmith@abc.com" /></label
+            ><label class="top"
+              >Cell Phone*<input type="tel" name="cell" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Business Information</legend>
 
-          <label class="top">
-            Business Name*<input type="text" name="busName" required
-          /></label>
-          <label class="top"
-            >Business Description
-            <textarea name="bDescription" rows="4"></textarea>
-          </label>
+            <label class="top">
+              Business Name*<input type="text" name="busName" required
+            /></label>
+            <label class="top"
+              >Business Description
+              <textarea name="bDescription" rows="4"></textarea>
+            </label>
 
-          <input type="hidden" name="formDate" id="formDate" />
-        </fieldset>
+            <input type="hidden" name="formDate" id="formDate" />
+          </fieldset>
+        </div>
         <fieldset>
           <legend>Membership Level</legend>
           <div class="memberLevel">
@@ -168,6 +170,7 @@
             </div>
           </div>
         </fieldset>
+
         <input
           type="submit"
           name="btnSubmit"
