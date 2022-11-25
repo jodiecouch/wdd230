@@ -232,4 +232,8 @@
   #directory.list .cardImage img {
     max-width: 250px;
   }
+  /*contact page */
+  #contactPage {
+    grid-template-columns: 1.5fr 2.5fr;
+  }
 }

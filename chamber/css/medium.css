@@ -155,4 +155,14 @@
     display: block;
     text-align: center;
   }
+
+  /*contact page */
+  #contactPage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .hours {
+    grid-column: 1/3;
+  }
 }

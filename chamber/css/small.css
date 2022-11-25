@@ -390,7 +390,7 @@ footer .seperator {
   display: block;
 }
 
-#joinPage form fieldset {
+form fieldset {
   margin: 1em;
   border-radius: 10px;
   border: 1px solid var(--color4);
@@ -434,7 +434,7 @@ form label.sbs input[type="radio"] {
   accent-color: var(--color4);
 }
 
-#btnJoin {
+form input[type="submit"] {
   background-color: var(--color6);
   color: var(--color5);
   padding: 0.6em;
@@ -443,6 +443,9 @@ form label.sbs input[type="radio"] {
   margin: auto 0.5em 1em 0.5em;
   width: 96%;
   max-width: 20rem;
+}
+#btnContact {
+  margin-left: 0;
 }
 
 form label.top input:required {
@@ -490,4 +493,33 @@ form label.top input:required:valid {
 #directory.list .cardTitle {
   color: var(--color6);
   font-size: 1em;
+}
+
+/*contact page*/
+
+#contactPage .hours {
+  border: 1px solid var(--color4);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+#contactPage {
+  text-align: center;
+}
+#contactPage .container form {
+  text-align: left;
+}
+#contactPage div {
+  border: none;
+}
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 0.5em;
+}
+.profiles img {
+  border-radius: 40px;
+}
+.hours h3 {
+  color: var(--color6);
 }
