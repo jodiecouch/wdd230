@@ -47,9 +47,10 @@
 
   main {
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    /*grid-template-rows: 200px 200px 200px;*/
     overflow: hidden;
     margin: 0.5rem;
+    background-color: var(--color1);
   }
 
   .event {
@@ -79,7 +80,8 @@
     grid-column: 2;
     grid-row: 3;
   }
-  .spotlight {
+
+  #spotlight {
     grid-column: 3;
     grid-row: 1/4;
     display: block;
@@ -87,22 +89,18 @@
     border: none;
     margin: -0.3em auto;
   }
-  .spotlight > div {
-    max-width: 20vw;
-    grid-template-rows: 0.5fr 1fr 1fr;
+  #spotlight > div {
+    max-width: 22vw;
+    /*grid-template-rows: 0.5fr 1fr 1fr;
     max-height: 200px;
+    */
     padding: 0.2em;
-    margin: 0.4em 0 0.4em 0.4em;
+    margin: 0.4em;
   }
 
   #spot3 {
     display: inherit;
     padding-bottom: 1em;
-  }
-
-  .spot-contact {
-    line-height: 0.1em;
-    font-size: 0.8rem;
   }
 
   .join {
@@ -111,6 +109,13 @@
     grid-row: 3;
     text-align: center;
     padding: 0.5em;
+  }
+
+  .news,
+  .join,
+  .weather,
+  .event {
+    padding-top: 2em;
   }
   footer {
     grid-template-columns: 1fr 2fr 1fr;

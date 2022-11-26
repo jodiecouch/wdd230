@@ -21,6 +21,10 @@ function displaySpotlight(spots, gold){
     spotlight.classList.add('spotlight');
 */
     spots.forEach(x => console.log(gold[x].name));
+    /*const spot2 = document.getElementById('spot2');
+    spot2.remove();
+    YOU COULD REMOVE OR JUST REPLACE THE HTML OR INNERTEXT of each item in each spot
+    */
 }
 
 function getSpot(gold,x){

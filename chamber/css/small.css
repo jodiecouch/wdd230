@@ -139,7 +139,7 @@ nav ul li a:hover {
   margin-top: -0.4rem;
 }
 main > div {
-  border: 1px solid;
+  border: 1px solid var(--color4);
   margin: 0.5vh;
   padding: 0.5vh;
 }
@@ -238,27 +238,27 @@ main > div {
 .news p {
   margin-top: 0.2em;
 }
-.spotlight {
+#spotlight {
   border: none;
 }
-.spotlight > div > h2 {
+#spotlight > div > h2 {
   margin: 0;
   padding: 0;
 }
-.spotlight > div {
+#spotlight > div {
   min-width: 15vw;
   border: 0.2em solid var(--color4);
   margin: 1vh;
   padding: 2vh;
   text-align: center;
 }
-.spot2 {
+#spot2,
+#spot1,
+#spot3 {
   line-height: 0.5em;
 }
-.spot-contact {
-  margin: 0;
-  padding: 0;
-  line-height: 0.5em;
+.cardAddress {
+  line-height: normal;
 }
 
 #spot3 {
