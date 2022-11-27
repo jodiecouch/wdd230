@@ -37,16 +37,15 @@ if (document.querySelector('#spotlight')){
     /*console.log(json);*/
     const members = json['directory'];
     const gold = members.filter(x=> x.membership >=2);  /*this gets all members with a membership level greater then or equal to 2*/
-    console.log(gold);
+    /*console.log(gold);*/
     const spotsToFill = Math.min(gold.length,3);    /*get 3 spots or all gold members if not more than 3*/
     if(spotsToFill > 0){
         let spots = getSpot(gold, spotsToFill);
-        console.log(spots);
-        /*spots.forEach(x => displayMembers(gold[x]), spotlight);*/
-        spots.forEach(x => displaySpotlight(gold[x]));
+        /*console.log(spots);*/
+        /*spots.forEach(x => displaySpotlight(gold[x]));*/
         for(let i = 0; i < spots.length; i++){
             let mySpot = 'spot' +(i+1);
-            console.log(mySpot);
+            /*console.log(mySpot);*/
             displayMembers(gold[spots[i]],mySpot);
         }
     }
@@ -58,7 +57,7 @@ function displaySpotlight(s){
    /* let spotlight = document.createElement('div');
     spotlight.classList.add('spotlight');
 */
-    console.log(s.name);
+ /*   console.log(s.name);*/
     /*const spot2 = document.getElementById('spot2');
     spot2.remove();
     YOU COULD REMOVE OR JUST REPLACE THE HTML OR INNERTEXT of each item in each spot
