@@ -1,0 +1,91 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  --color1: #4c4332; /* #677a75;*/
+  --color2: #8a8d6e;
+  --color3: #725438;
+  --color4: #e2954d;
+  --color5: #253e38;
+  --color6: #e7e6e7;
+
+  background-color: var(--color1);
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  background-image: url("../../../ImagesBountiful/markus-spiske-vrbZVyX2k4I-unsplash.jpg");
+  background-size: 100vh;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 1em 10vw 1em 1em;
+  padding: 1em 3vw;
+  background-color: var(--color4);
+  border-radius: 50px;
+  border: solid 1px var(--color1);
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--color5);
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+nav ul li a:hover {
+  background-color: var(--color2);
+  color: var(--color6);
+}
+
+aside div {
+  width: 100px;
+  height: 100px;
+  border: solid 1px var(--color5);
+}
+.color1 {
+  background-color: var(--color1);
+}
+.color2 {
+  background-color: var(--color2);
+}
+
+.color3 {
+  background-color: var(--color3);
+}
+
+.color4 {
+  background-color: var(--color4);
+}
+
+.color5 {
+  background-color: var(--color5);
+}
+
+.color6 {
+  background-color: var(--color6);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main img {
+  width: 250px;
+}
