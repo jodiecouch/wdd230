@@ -26,10 +26,11 @@ img {
 }
 
 header {
-  height: 300px;
-  width: 100%;
-  background-image: url("../../../ImagesBountiful/markus-spiske-vrbZVyX2k4I-unsplash.jpg");
-  background-size: 100vh;
+  height: 200px;
+  background-image: url("../images/banner1280x200.jpg");
+  background-repeat: no-repeat;
+
+  background-position: 0% 50%;
 }
 
 nav ul {
