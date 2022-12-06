@@ -50,7 +50,7 @@ nav ul li:hover {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--color6);
+  color: var(--color1);
   font-size: 1.2rem;
   font-weight: bolder;
   padding: 2em;
@@ -59,7 +59,7 @@ nav ul li a {
   height: 100%;
 }
 .active {
-  color: var(--color3);
+  color: var(--color6);
 }
 /*
 nav ul li a:hover {
@@ -120,9 +120,8 @@ footer {
   padding: 1em;
 }
 #contact-name {
-  color: var(--color4);
+  color: var(--color6);
   font-size: 1.5em;
-
   height: 5vh;
   font-family: "Holtwood One SC", serif;
   padding-left: 1em;
