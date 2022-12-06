@@ -37,7 +37,7 @@ nav ul {
 }
 nav ul li {
   border: solid 2px var(--color5);
-
+  border-radius: 5px;
   margin-top: 2em;
   display: block;
   width: 100%;
@@ -118,6 +118,14 @@ footer {
 .content {
   margin: 1em;
   padding: 1em;
+}
+#contact-name {
+  color: var(--color4);
+  font-size: 1.5em;
+
+  height: 5vh;
+  font-family: "Holtwood One SC", serif;
+  padding-left: 1em;
 }
 .social {
   padding: 0.5em;
