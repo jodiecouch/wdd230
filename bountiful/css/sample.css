@@ -68,7 +68,12 @@ nav ul li a:hover {
 nav ul li a.active:hover {
   color: var(--color5);
 }*/
-
+.drink {
+  width: 100px;
+  height: 200px;
+  border: 1px solid var(--color5);
+  background-color: var(--color6);
+}
 .color1 {
   background-color: var(--color1);
 }
