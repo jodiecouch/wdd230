@@ -1,0 +1,20 @@
+@media only screen and (min-width: 40rem) {
+  .container {
+    display: flex;
+  }
+  aside {
+    padding-left: 40px;
+    max-width: 180px;
+  }
+  #hamburgerBtn {
+    display: none;
+  }
+  main {
+    margin: 1em 1em 1em 2em;
+    padding: 1em;
+  }
+  .odd,
+  .even {
+    margin: auto;
+  }
+}
