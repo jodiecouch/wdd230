@@ -15,6 +15,6 @@
   }
   .odd,
   .even {
-    margin: auto;
+    margin: 0.5em;
   }
 }

@@ -44,12 +44,13 @@
         <h1>Bountiful Foods</h1>
 
         <div class="odd">
-          <img
-            src="images/fertile_soil200x300.jpg"
-            alt="fertile soil"
-            width="200"
-            height="300"
-          />
+          <picture>
+            <source
+              srcset="images/fertile_soil200x300.jpg"
+              media="(min-width: 864px)"
+            />
+            <img src="images/seedlings400x267.jpg" alt="rich soil" />
+          </picture>
         </div>
         <p>
           California provides one of the most abundant and diverse agricultural
@@ -74,7 +75,11 @@
         </p>
 
         <div class="even">
-          <img src="images/field_worker400x267.jpg" alt="strawberry fields" />
+          <img
+            src="images/field_worker400x267.jpg"
+            alt="strawberry fields"
+            loading="lazy"
+          />
         </div>
         Bountiful Foods provides fresh, organic and sustainable produce locally
         grown and raised in the state of California. For your conveniece we also
@@ -93,7 +98,11 @@
 
         <p></p>
         <div class="odd">
-          <img src="images/veggies400x267.jpg" alt="citrus tree" />
+          <img
+            src="images/veggies400x267.jpg"
+            alt="root vegetables"
+            loading="lazy"
+          />
         </div>
         Some big blurb about embracing the California way of life. Being a
         foodie and followers of organic and sustainable food. This is a great
