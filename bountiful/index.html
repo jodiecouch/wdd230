@@ -11,22 +11,46 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap"
       rel="stylesheet"
     />
+    <script src="js/script.js" defer></script>
+    <script src="js/weather.js" defer></script>
   </head>
   <body>
     <header>
-      <picture
+      <picture class="logo"
         ><img
           src="images/logo210x210.png"
           alt="Bountiful Foods Logo"
           height="210"
       /></picture>
+      <div class="weather">
+        <div class="weather_card">
+          <p>Today</p>
+          <img
+            src="images/logo210x210.png"
+            alt="weather icon"
+            id="weather-icon"
+          />
+          <p id="weather-words">
+            <span id="temperature"></span>
+            <sup class="degree">&#x2109;</sup>
+          </p>
+          <p id="weather-caption"></p>
+          <p class="wind">Wind Speed: <span id="wind-speed"></span></p>
+
+          <p class="wind">Wind Chill:<span id="wind-chill"> NA</span></p>
+        </div>
+        <div class="weather_card"></div>
+        <div class="weather_card"></div>
+        <div class="weather_card"></div>
+      </div>
     </header>
     <div class="container">
       <aside>
@@ -36,7 +60,9 @@
             <li class="color3"><a href="index.html" class="active">Home</a></li>
             <li class="color6"><a href="fresh.html">Fresh</a></li>
             <li class="color6"><a href="about.html">About</a></li>
-            <li class="color6"><a href="resources.html">Resources</a></li>
+            <li class="color6">
+              <a id="nav-resource" href="resources.html">Resources</a>
+            </li>
           </ul>
         </nav>
         <div class="drink">Order a drink Drink count</div>

@@ -1,4 +1,13 @@
 @media only screen and (min-width: 54rem) {
+  header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .weather {
+    display: flex;
+    align-items: flex-end;
+  }
   main {
     width: 1000px;
   }
