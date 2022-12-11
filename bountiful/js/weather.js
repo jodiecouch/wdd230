@@ -1,10 +1,10 @@
 // select HTML elements in the document
 const temp = document.querySelector('#temperature');
 const speed = document.querySelector('#wind-speed');
-const chill = document.querySelector('#wind-chill');
+const chill = document.querySelector('#humid');
 const description = document.querySelector('#weather-words');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#weather-caption');
+const captionDesc = document.querySelector('.weather-caption');
 const weatherKey = 'a13310b584dc5039b90a85184734cfe0';
 //const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=a13310b584dc5039b90a85184734cfe0';
 const url = 'https://api.openweathermap.org/data/2.5/weather?zip=83311,us&units=imperial&appid=a13310b584dc5039b90a85184734cfe0';
@@ -28,14 +28,15 @@ apiFetch();
 
 function  displayResults(weatherData) {
   temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  speed.innerHTML = weatherData.wind.speed;
+  //speed.innerHTML = weatherData.wind.speed;
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
-  chill.innerHTML= windChill(weatherData.main.temp, weatherData.wind.speed);
+  //chill.innerHTML= windChill(weatherData.main.temp, weatherData.wind.speed);
+  chill.innerHTML=  weatherData.main.humidity;
 }
 
 //give credit to https://openweathermap.org/ anywhere you use the weather api!!!!!!!!!!!!!
