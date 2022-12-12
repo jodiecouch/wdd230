@@ -10,6 +10,7 @@ const weatherKey = 'a13310b584dc5039b90a85184734cfe0';
 const url = 'https://api.openweathermap.org/data/2.5/weather?zip=92010,us&units=imperial&appid=a13310b584dc5039b90a85184734cfe0';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?zip=92010&exclude=hourly&units=imperial&appid=a13310b584dc5039b90a85184734cfe0';
 
+//const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=7&appid=a13310b584dc5039b90a85184734cfe0';
 var currentDay;
 
 
@@ -91,8 +92,83 @@ if (typeof today === 'object' && today !== null && 'getDate' in today) {
     today.setDate(today.getDate()+1);
     today.setHours(11,0,0);
     console.log("new today is " + today);
-    console.log("in js time today is " + today.getTime());
-}
+    //console.log("in js time today is " + today.getTime());
+    const list = future.list;
+   
+    var day1 = new Date(currentDay);
+    day1.setDate(today.getDate()+1);
+    var day2 = new Date(day1);
+    day2.setDate(day1.getDate()+1);
+    var day3 = new Date(day2);
+    day3.setDate(day2.getDate()+1);
 
+    /*
+    console.log(day1);
+    console.log(day2);
+    console.log(day3);
+    */
+    var d1 = 0;
+    var d2 = 0;
+    var d3 = 0;
+
+    var dayList = [];
+    dayList.push(0);
+    let i = 0;
+    
+    //list.forEach(x=> fillDays(x));
+    list.forEach((item)=>{
+        let day = new Date(item.dt_txt);
+        //day1
+        if(day.getDate() == day1.getDate())
+        {
+        if(day.getHours() == 12){            
+            dayList.push(i-1);
+        }
+        i++;
+        }
+        //day 2
+         if(day.getDate() == day2.getDate())
+        {
+        if(day.getHours() == 12){            
+            //d2 = i-1;            
+            dayList.push(i-1);
+        }
+        i++;
+        }
+        //day3
+         if(day.getDate() == day3.getDate())
+        {
+        if(day.getHours() == 12){            
+            //d3 = i-1;
+            dayList.push(i-1);
+        }
+        i++;
+        }
+    });
+
+    //day1 forecast values
+    
+    console.log(list[d1].dt_txt);
+    console.log(d2);
+    console.log(d3);    
+    /*
+    let item = list[d1];
+    let humidity = item.main.humidity;
+    let temp = item.main.temp;
+    let icon = item.weather.icon;
+    let description = item.weather.description;
+*/
+    let counter = 0
+    dayList.forEach((f)=>{
+        let item = list[f];
+        let humidity = item.main.humidity;
+        let temp = item.main.temp;
+        let icon = item.weather.icon;
+        let description = item.weather[0].description;
+        
+        console.log(`Day Number ${counter} temp is ${temp} humidity is ${humidity} description is ${description}`);
+        counter++;
+    })
+}
 
 }
