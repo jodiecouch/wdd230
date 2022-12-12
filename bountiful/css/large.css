@@ -2,6 +2,10 @@
   main {
     width: 1000px;
   }
+  main > p {
+    word-wrap: normal;
+    width: fit-content;
+  }
   main img {
     margin: 1em;
   }

@@ -1,10 +1,7 @@
 // select HTML elements in the document
-const temp = document.querySelector('#temperature');
-const speed = document.querySelector('#wind-speed');
-const chill = document.querySelector('#humid');
-const description = document.querySelector('#weather-words');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('.weather-caption');
+
+const  weather = document.querySelector('.weather');
+const  weather2 = document.querySelector('.weather2');
 const weatherKey = 'a13310b584dc5039b90a85184734cfe0';
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?zip=92010,us&units=imperial&appid=a13310b584dc5039b90a85184734cfe0';
@@ -19,7 +16,9 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data); // this is for testing the call
-      displayResults(data);
+      //displayResults(data);
+      buildWeatherCard(data,1, weather);
+      buildWeatherCard(data,1, weather2);
       return data
     } else {
         throw Error(await response.text());
@@ -30,7 +29,7 @@ async function apiFetch() {
 }
 
 apiFetch();  //get current weather
-
+/*
 function  displayResults(weatherData) {
   temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
@@ -45,7 +44,7 @@ currentDay = new Date(weatherData.dt*1000).toLocaleDateString('en-us',{year:"num
   //chill.innerHTML= windChill(weatherData.main.temp, weatherData.wind.speed);
   chill.innerHTML=  weatherData.main.humidity;
 }
-
+*/
 //give credit to https://openweathermap.org/ anywhere you use the weather api!!!!!!!!!!!!!
 
 
@@ -73,7 +72,8 @@ function displayForecast(future){
 
     let counter = 0
     dayList.forEach((f)=>{
-        buildWeatherCard(future.list[f]);
+        buildWeatherCard(future.list[f],0, weather);
+        buildWeatherCard(future.list[f],0, weather2);
         /*
         let item = future.list[f];
         let humidity = item.main.humidity;
@@ -94,14 +94,19 @@ weatherIcon.setAttribute('src', iconsrc);
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('.weather-caption');
   */
-function buildWeatherCard(item){
+function buildWeatherCard(item, todayTitle, location){
 //create the weather card container
     let card = document.createElement('div');
     card.classList.add('weather-card');
 //create weather day title
     let dayTitle = document.createElement('div');
-    const wDate = new Date(item.dt_txt);
-    dayTitle.innerText = wDate.toLocaleDateString('en-us', {weekday: 'long'});
+    if (todayTitle == 1 ){
+        dayTitle.innerText = 'Today';
+        currentDay = new Date(item.dt*1000).toLocaleDateString('en-us',{year:"numeric", month:"numeric", day:"numeric"});
+    } else {
+        const wDate = new Date(item.dt_txt);
+        dayTitle.innerText = wDate.toLocaleDateString('en-us', {weekday: 'long'});
+    }
     card.appendChild(dayTitle)
 
     let condition = document.createElement('div');
@@ -131,7 +136,10 @@ function buildWeatherCard(item){
     card.appendChild(humidity);
 
 //add the weather card to the weather container
-    document.querySelector('.weather').appendChild(card);
+    
+    location.appendChild(card);
+   
+    
 }
     
 

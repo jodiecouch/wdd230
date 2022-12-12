@@ -1,22 +1,25 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 42rem) {
   header {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
   .weather {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+  }
+  .weather2 {
+    display: none;
   }
   .weather-card {
     min-width: 110px;
     height: 150px;
-    background-color: rgba(183, 185, 157, 0.5);
     color: var(--color6);
     text-align: center;
-    margin: 0.2em;
+
     padding: 0.2em;
-    line-height: 1.5em;
-    text-transform: capitalize;
   }
   .weather-condition {
     display: grid;
@@ -52,6 +55,10 @@
   main {
     margin: 1em 1em 1em 2em;
     padding: 1em;
+  }
+  main > p {
+    word-wrap: break-word;
+    width: 450px;
   }
   .odd,
   .even {
