@@ -1,19 +1,31 @@
 @media only screen and (min-width: 40rem) {
+  header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
   .weather {
     display: flex;
+    align-items: flex-end;
   }
   .weather-card {
-    min-width: 150px;
-    height: 200px;
-    border: 1px solid var(--color5);
+    min-width: 110px;
+    height: 150px;
+    background-color: rgba(183, 185, 157, 0.5);
     color: var(--color6);
     text-align: center;
+    margin: 0.2em;
+    padding: 0.2em;
+    line-height: 1.5em;
+    text-transform: capitalize;
   }
   .weather-condition {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
-
+  .humidity {
+    font-size: 0.9rem;
+  }
   .container {
     display: flex;
   }

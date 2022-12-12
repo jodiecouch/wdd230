@@ -37,7 +37,7 @@ function  displayResults(weatherData) {
   const desc = weatherData.weather[0].description;
 
 currentDay = new Date(weatherData.dt*1000).toLocaleDateString('en-us',{year:"numeric", month:"numeric", day:"numeric"});
-console.log(currentDay);
+//console.log(currentDay);
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
@@ -68,71 +68,14 @@ async function fetchForecast() {
 fetchForecast();  //get current weather
 
 function displayForecast(future){    
-    console.log(future.city.name);
-    console.log(future.list[2].main.temp);
-   console.log(future.list[2].dt_txt);
-
-
-   var dayName = new Date(future.list[2].dt*1000).toLocaleDateString('en-us',{year:"numeric", month:"numeric", day:"numeric"});
-console.log("day name" + dayName);
-
-console.log(currentDay);
-var today = new Date(currentDay);
-if (typeof today === 'object' && today !== null && 'getDate' in today) { 
-    today.setDate(today.getDate());
-    today.setHours(11,0,0);
-
-    const list = future.list;
-   
-    var day1 = new Date(currentDay);
-    day1.setDate(today.getDate()+1);
-    var day2 = new Date(day1);
-    day2.setDate(day1.getDate()+1);
-    var day3 = new Date(day2);
-    day3.setDate(day2.getDate()+1);
-/*
-    console.log(day1);
-    console.log(day2);
-    console.log(day3);
-*/
-    var dayList = [];
-    let i = 0;
-    //get the index of the day I want to use for forecast and put it in dayList
-    list.forEach((item)=>{
-        let day = new Date(item.dt_txt);
-        //day1
-        if(day.getDate() == day1.getDate())
-        {
-        if(day.getHours() == 12){            
-            dayList.push(i);
-        }
-        i++;
-        }
-        //day 2
-         if(day.getDate() == day2.getDate())
-        {
-        if(day.getHours() == 12){            
-            //d2 = i-1;            
-            dayList.push(i);
-        }
-        i++;
-        }
-        //day3
-         if(day.getDate() == day3.getDate())
-        {
-        if(day.getHours() == 12){            
-            //d3 = i-1;
-            dayList.push(i);
-        }
-        i++;
-        }
-    });
-
+  var dayList = getDays(future);
     // forecast values for the indexes in dayList. Index is for weather data 'list' item
 
     let counter = 0
     dayList.forEach((f)=>{
-        let item = list[f];
+        buildWeatherCard(future.list[f]);
+        /*
+        let item = future.list[f];
         let humidity = item.main.humidity;
         let temp = item.main.temp;
         let icon = item.weather.icon;
@@ -141,7 +84,111 @@ if (typeof today === 'object' && today !== null && 'getDate' in today) {
         
         console.log(`Day Number ${counter} for date ${displayDate} temp is ${temp} humidity is ${humidity} description is ${description}`);
         counter++;
+        */
     })
-}
+    }
+/*
+temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('.weather-caption');
+  */
+function buildWeatherCard(item){
+//create the weather card container
+    let card = document.createElement('div');
+    card.classList.add('weather-card');
+//create weather day title
+    let dayTitle = document.createElement('div');
+    const wDate = new Date(item.dt_txt);
+    dayTitle.innerText = wDate.toLocaleDateString('en-us', {weekday: 'long'});
+    card.appendChild(dayTitle)
 
+    let condition = document.createElement('div');
+    condition.classList.add('weather-condition');
+//create the weather icon
+    const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
+    const desc = item.weather[0].description;
+    let image = document.createElement('img');
+    image.setAttribute('src', iconsrc);
+    image.setAttribute('alt', desc);
+    image.setAttribute('loading', 'lazy');
+    condition.appendChild(image);
+//create the weather temp
+    let temp = document.createElement('div');
+    temp.innerHTML = `<span id="temperature">${item.main.temp}</span> <sup class="degree">&#x2109;</sup>`;
+    condition.appendChild(temp);
+
+    card.appendChild(condition);
+//add description
+    let description = document.createElement('div');
+    description.innerHTML = desc;
+    card.appendChild(description);
+//add humidity
+    let humidity = document.createElement('div');
+    humidity.classList.add('humidity');
+    humidity.innerHTML = `Humidity: ${item.main.humidity} %`;
+    card.appendChild(humidity);
+
+//add the weather card to the weather container
+    document.querySelector('.weather').appendChild(card);
+}
+    
+
+
+function getDays(future){
+    var today = new Date(currentDay);
+    if (typeof today === 'object' && today !== null && 'getDate' in today) { 
+        today.setDate(today.getDate());
+        today.setHours(11,0,0);
+
+        const list = future.list;
+    
+        var day1 = new Date(currentDay);
+        day1.setDate(today.getDate()+1);
+        var day2 = new Date(day1);
+        day2.setDate(day1.getDate()+1);
+        var day3 = new Date(day2);
+        day3.setDate(day2.getDate()+1);
+    /*
+        console.log(day1);
+        console.log(day2);
+        console.log(day3);
+    */
+   
+        var dayList = [];
+        let i = 0;
+        //get the index of the day I want to use for forecast and put it in dayList
+        list.forEach((item)=>{
+            let day = new Date(item.dt_txt);
+            //day1
+            if(day.getDate() == day1.getDate())
+            {
+            if(day.getHours() == 12){            
+                dayList.push(i);
+            }
+            i++;
+            }
+            //day 2
+            if(day.getDate() == day2.getDate())
+            {
+            if(day.getHours() == 12){            
+                //d2 = i-1;            
+                dayList.push(i);
+            }
+            i++;
+            }
+            //day3
+            if(day.getDate() == day3.getDate())
+            {
+            if(day.getHours() == 12){            
+                //d3 = i-1;
+                dayList.push(i);
+            }
+            i++;
+            }
+        });
+
+    }
+    return dayList;
 }
