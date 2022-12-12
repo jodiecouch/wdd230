@@ -9,6 +9,7 @@
   main > p {
     word-wrap: normal;
     width: fit-content;
+    max-width: fit-content;
   }
   main img {
     margin: 1em;

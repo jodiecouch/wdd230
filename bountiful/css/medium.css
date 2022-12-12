@@ -58,10 +58,11 @@
   main {
     margin: 1em 1em 1em 2em;
     padding: 1em;
+    text-align: left;
   }
   main > p {
     word-wrap: break-word;
-    width: 450px;
+    width: 430px;
   }
   .odd,
   .even {

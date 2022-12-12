@@ -37,6 +37,7 @@ header {
 .weather2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .weather-card {
   min-width: 125px;
@@ -112,11 +113,15 @@ nav ul li a {
   display: block;
 }
 /* hamburger button */
-
-.drink {
-  padding: 2em;
+main {
+  text-align: center;
+}
+.btn-action {
+  background-color: var(--color4);
+  padding: 0.5em;
+  margin: 0.2em;
   border: 1px solid var(--color5);
-  background-color: var(--color6);
+  border-radius: 15px;
 }
 .color1 {
   background-color: var(--color1);
