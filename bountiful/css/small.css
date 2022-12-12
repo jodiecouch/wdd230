@@ -152,8 +152,6 @@ main img {
 footer {
   background-color: var(--color2);
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 
 .content {
