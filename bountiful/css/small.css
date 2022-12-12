@@ -93,7 +93,8 @@ nav ul li a {
 
 /*toggle between hamburger button x or menu symbol*/
 #hamburgerBtn {
-  padding-top: 0.2vh;
+  /*padding-top: 0.2vh;*/
+  padding: 1em;
   margin: 0;
   margin-left: 0.5rem;
   border: 2px solid rgba(0, 0, 0, 0.5);

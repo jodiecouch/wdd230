@@ -15,7 +15,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
+      //console.log(data); // this is for testing the call
       //displayResults(data);
       buildWeatherCard(data,1, weather);
       buildWeatherCard(data,1, weather2);
@@ -29,22 +29,7 @@ async function apiFetch() {
 }
 
 apiFetch();  //get current weather
-/*
-function  displayResults(weatherData) {
-  temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = weatherData.weather[0].description;
 
-currentDay = new Date(weatherData.dt*1000).toLocaleDateString('en-us',{year:"numeric", month:"numeric", day:"numeric"});
-//console.log(currentDay);
-
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc;
-  //chill.innerHTML= windChill(weatherData.main.temp, weatherData.wind.speed);
-  chill.innerHTML=  weatherData.main.humidity;
-}
-*/
 //give credit to https://openweathermap.org/ anywhere you use the weather api!!!!!!!!!!!!!
 
 
@@ -53,7 +38,7 @@ async function fetchForecast() {
     const response = await fetch(forecastUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
+      //console.log(data); // this is for testing the call
       displayForecast(data);
       return data
     } else {
@@ -73,27 +58,10 @@ function displayForecast(future){
     let counter = 0
     dayList.forEach((f)=>{
         buildWeatherCard(future.list[f],0, weather);
-        buildWeatherCard(future.list[f],0, weather2);
-        /*
-        let item = future.list[f];
-        let humidity = item.main.humidity;
-        let temp = item.main.temp;
-        let icon = item.weather.icon;
-        let description = item.weather[0].description;
-        let displayDate = item.dt_txt;
-        
-        console.log(`Day Number ${counter} for date ${displayDate} temp is ${temp} humidity is ${humidity} description is ${description}`);
-        counter++;
-        */
+        buildWeatherCard(future.list[f],0, weather2);       
     })
     }
-/*
-temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('.weather-caption');
-  */
+
 function buildWeatherCard(item, todayTitle, location){
 //create the weather card container
     let card = document.createElement('div');
@@ -158,11 +126,6 @@ function getDays(future){
         day2.setDate(day1.getDate()+1);
         var day3 = new Date(day2);
         day3.setDate(day2.getDate()+1);
-    /*
-        console.log(day1);
-        console.log(day2);
-        console.log(day3);
-    */
    
         var dayList = [];
         let i = 0;
