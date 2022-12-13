@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
+    <script src="js/fruit_order.js" defer></script>
   </head>
   <body>
     <header>
@@ -45,7 +46,59 @@
           </ul>
         </nav>
       </aside>
-      <main></main>
+      <main id="fresh">
+        <form method="get" action="">
+          <div>
+            <fieldset>
+              <legend>Juice Bar Order</legend>
+
+              <label class="top"
+                >First Name
+                <input type="text" name="fName" required />
+              </label>
+
+              <label class="top"
+                >Email<input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="johnsmith@abc.com"
+              /></label>
+
+              <label class="top"
+                >Cell Phone<input type="tel" name="cell" required
+              /></label>
+
+              <label class="top">Option 1
+                <select name="fruit1" id="fruit1" required>
+                  <option value="">Select</option>
+                </select>
+              </label>
+
+              <label class="top">Option 2
+                <select name="fruit2" id="fruit2" required>
+                  <option value="">Select</option>
+                </select>
+                
+              </label>
+
+              <label class="top">Option 3
+                <select name="fruit3" id="fruit3" required>
+                  <option value="">Select</option>
+                </select>
+                
+              </label>
+
+              <input
+          type="submit"
+          name="btnSubmit"
+          value="Order"
+          id="btnOrder"
+        />
+          </div>
+        </form>
+        <div id="order-results"></div>
+      </main>
     </div>
     <footer>
       <div class="contact">
