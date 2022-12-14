@@ -15,4 +15,21 @@ ham.onclick = toggleMenu;
 /*last updated date*/
 let modifyDate = new Date(document.lastModified).toLocaleString();
 const dateModified = document.querySelector('#last-update');
-dateModified.textContent = `Last Updated: ${modifyDate}`;
+dateModified.textContent = `Jodie Couch Last Updated: ${modifyDate}`;
+
+/* code to display order counter */
+if (document.querySelector("#special-drinks")){
+const orderCountDisplay = document.querySelector("#special-drinks");
+
+ orderCountDisplay.innerHTML = Number(window.localStorage.getItem("orderCount-ls"));
+
+ /*
+ let orderCount = Number(window.localStorage.getItem("orderCount-ls"));
+if (orderCount !== 0){
+    orderCountDisplay.innerHTML = orderCount;
+}
+else{
+   orderCountDisplay.innerHTML =  '0';  
+}
+*/
+}

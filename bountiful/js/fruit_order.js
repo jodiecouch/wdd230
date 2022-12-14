@@ -40,7 +40,9 @@ document.getElementById('fresh-form').addEventListener('submit', function(event)
     const fields = form.elements;
 
     displayOrderResults(fields);
-
+    let orderCount = Number(window.localStorage.getItem("orderCount-ls"));
+    orderCount++;
+    window.localStorage.setItem('orderCount-ls', orderCount);
 }, false);
 
 function displayOrderResults(fields){
