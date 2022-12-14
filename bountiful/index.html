@@ -47,6 +47,15 @@
             </li>
           </ul>
         </nav>
+        <div class="order-card" id="drinks-ordered">
+          Specialty Drinks Ordered: <span id="special-drinks">75</span>
+          <button
+            onclick="window.location.href='fresh.html';"
+            class="btn-action"
+          >
+            Order Here
+          </button>
+        </div>
       </aside>
       <main id="home">
         <h1>Bountiful Foods</h1>
@@ -92,19 +101,14 @@
             Order Here
           </button>
         </p>
+
         <div class="even">
-          <!-- <img
-            src="images/field_worker400x267.jpg"
-            alt="strawberry fields"
-            loading="lazy"
-          />
-         -->
           <picture>
             <source
               srcset="images/field_worker400x267.jpg"
               media="(min-width: 864px)"
             />
-            <img src="images/drinks400x248.jpg" alt="seedlings" />
+            <img src="images/drinks400x248.jpg" alt="Bountiful Foods image" />
           </picture>
         </div>
         <p>
@@ -136,6 +140,7 @@
             760.451.7454
           </p>
         </div>
+
         <div class="social">
           <a href="https://twitter.com" target="_blank">
             <img
@@ -151,6 +156,7 @@
             <img src="images/vimeo_logo_icon_144758.png" alt="Vimeo Icon" />
           </a>
         </div>
+        <div id="last-update"></div>
       </div>
     </footer>
   </body>

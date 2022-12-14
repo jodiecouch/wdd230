@@ -63,6 +63,25 @@ nav ul.open {
   display: block;
   background-color: var(--color2);
 }
+#drinks-ordered {
+  display: none;
+}
+#drinks-ordered.open {
+  display: block;
+}
+.order-card {
+  border: solid 2px var(--color4);
+  color: var(--color6);
+  background-color: var(--color2);
+  border-radius: 5px;
+  margin: 2em 0.5em 0.5em 0.5em;
+  padding: 1.5em;
+  display: block;
+
+  text-align: center;
+  font-size: large;
+  line-height: 1.5rem;
+}
 /*hamb nav style */
 
 nav ul li {
@@ -160,7 +179,10 @@ footer {
   background-color: var(--color2);
   width: 100%;
 }
-
+#last-update {
+  text-align: center;
+  margin: 0.5em 0.5em 0.5em 1em;
+}
 .content {
   margin: 1em;
   padding: 1em;

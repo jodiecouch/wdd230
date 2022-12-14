@@ -53,6 +53,10 @@
   nav button {
     display: none;
   }
+  #drinks-ordered {
+    display: block;
+    width: 90%;
+  }
   nav ul.open {
     background-color: transparent;
   }
@@ -80,5 +84,8 @@
   }
   main#fresh {
     min-width: 500px;
+  }
+  #last-update {
+    text-align: left;
   }
 }
