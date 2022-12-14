@@ -250,3 +250,7 @@ form input[type="submit"] {
 #order-results h2 {
   margin: 0;
 }
+/******* About page ************/
+main#about {
+  text-align: center;
+}

@@ -3,7 +3,7 @@
   .footer-container {
     max-width: 1225px;
   }
-  main#home {
+  main {
     width: 1000px;
   }
   main#home {
@@ -27,5 +27,14 @@
   main#fresh {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+  }
+
+  main#about figcaption {
+    padding-left: 1em;
+  }
+  /*******about page****/
+  main#about {
+    text-align: left;
   }
 }

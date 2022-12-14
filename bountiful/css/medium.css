@@ -59,14 +59,12 @@
   nav ul#primaryNav {
     display: flex;
     flex-direction: column;
-    justify-content: center; /*center; or flex-end for right aligned*/
+    justify-content: center;
   }
   #nav-resource {
     padding-left: 1em;
   }
-  main#fresh {
-    width: 80%;
-  }
+
   main#home {
     margin: 1em 1em 1em 2em;
     padding: 1em;
@@ -79,5 +77,8 @@
   .odd,
   .even {
     margin: 0.5em;
+  }
+  main#fresh {
+    min-width: 500px;
   }
 }
