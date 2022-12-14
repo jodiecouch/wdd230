@@ -4,6 +4,11 @@ const list2 = document.getElementById('fruit2');
 const list3 = document.getElementById('fruit3');
 var fruit;
 var counter = 0;
+var totalCarb =0;
+var totalProtein =0;
+var totalFat = 0;
+var totalCalories =0;
+var totalSugar = 0;
 
 fetch(data)
   .then(response => response.json())
@@ -34,14 +39,7 @@ document.getElementById('fresh-form').addEventListener('submit', function(event)
     const form = event.target;
     const fields = form.elements;
 
-    
-
     displayOrderResults(fields);
-    
-    /*console.log(fruit1.nutritions);
-    console.log(fruit2.nutritions);
-    console.log(fruit3.nutritions);*/
-    
 
 }, false);
 
@@ -53,21 +51,25 @@ function displayOrderResults(fields){
     const fruit2 = fruit[fields.fruit2.value];
     const fruit3 = fruit[fields.fruit3.value];
 
-   let display = document.getElementById('order-results');
+   let display = document.createElement('div');
+   display.setAttribute('id', 'order-results');
     //header
     let header = document.createElement('h2');
     header.innerHTML="Order Received"
     display.appendChild(header);
+    
     //name
     let nameP = document.createElement('p');
     nameP.classList.add('label');
     nameP.innerText = `Name: ${name}`;
     display.appendChild(nameP);
+
     //email
     let emailP = document.createElement('p');
     emailP.classList.add('label');
     emailP.innerText = `Email: ${email}`;
     display.appendChild(emailP);
+    
     //phone
     let phoneP = document.createElement('p');
     phoneP.classList.add('label');
@@ -81,42 +83,54 @@ function displayOrderResults(fields){
     display.appendChild(instructionsP);
     */
     //fruit1
+    var fruitString = createFruitHtml(fruit1,1);
     let fruit1P = document.createElement('p');
     fruit1P.classList.add('fruit-card');
-    //fruit1P.innerText = JSON.stringify(fruit1.nutritions);
-
+    fruit1P.innerHTML = fruitString;
     display.appendChild(fruit1P);
     
     //fruit2
+    fruitString = createFruitHtml(fruit2,2);
     let fruit2P = document.createElement('p');
     fruit2P.classList.add('fruit-card');
-    //fruit2P.innerHTML = `Option Two: ${fruit2.name}<br>Nutrition: ${JSON.stringify(fruit1.nutritions)}`;
+    fruit2P.innerHTML = fruitString;
     display.appendChild(fruit2P);
+    
     //fruit3
-    //let fruitString = createNutritionString(fruit3.nutritions);
-    let fruitString = createFruitHtml(fruit3);
+    fruitString = createFruitHtml(fruit3,3);
     let fruit3P = document.createElement('p');
     fruit3P.classList.add('fruit-card');
     fruit3P.innerHTML = fruitString;
     display.appendChild(fruit3P);
+
     //total nutrition
     let totalP = document.createElement('p');
     totalP.classList.add('fruit-card');
     totalP.setAttribute('id','total-nutrition');
-    totalP.innerText = 'Need to add it all together';
+    totalP.innerHTML = `<p>Total Nutrition</p>
+    <p>Carbohydrates: ${totalCarb.toFixed(2)} Protein: ${totalProtein.toFixed(2)} Fat: ${totalFat.toFixed(2)}
+    Calories: ${totalCalories.toFixed(2)} Sugar: ${totalSugar.toFixed(2)}</p>`;
     display.appendChild(totalP);
+
+    document.getElementById('fresh').appendChild(display);
 
 }
 
 function createNutritionString(item){
     let str = `Carbohydrates: ${item.carbohydrates} Protein: ${item.protein} Fat: ${item.fat}
-    Calories: ${item.calories} Sugar: ${item.sugar}`
+    <br>Calories: ${item.calories} Sugar: ${item.sugar}`
+    totalCarb += item.carbohydrates;
+    totalProtein += item.protein;
+    totalFat += item.fat;
+    totalCalories += item.calories;
+    totalSugar += item.sugar;
     return str;
 }
-function createFruitHtml(item){
+function createFruitHtml(item, option_no){
     let str = createNutritionString(item.nutritions);
-    let p = `<p>Option X: ${item.name}</p><p>${str}</p>`;
+    let p = `<p>Option ${option_no}: ${item.name}</p><p>${str}</p>`;
     return p;
     console.log(p);
     ;
 }
+
