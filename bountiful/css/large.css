@@ -3,13 +3,13 @@
   .footer-container {
     max-width: 1225px;
   }
-  main {
+  main#home {
     width: 1000px;
   }
   main#home {
     text-align: left;
   }
-  main > p {
+  main#home > p {
     word-wrap: normal;
     width: fit-content;
     max-width: fit-content;

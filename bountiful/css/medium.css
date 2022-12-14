@@ -64,13 +64,15 @@
   #nav-resource {
     padding-left: 1em;
   }
-
-  main {
+  main#fresh {
+    width: 80%;
+  }
+  main#home {
     margin: 1em 1em 1em 2em;
     padding: 1em;
     text-align: left;
   }
-  main > p {
+  main#home > p {
     word-wrap: break-word;
     width: 430px;
   }

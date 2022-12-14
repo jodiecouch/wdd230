@@ -3,7 +3,7 @@ html {
   -ms-text-size-adjust: 100%;
   --color1: #4c4332; /* #677a75;*/
   --color2: #8a8d6e;
-  --color3: #725438;
+  --color3: #9c7d5f; /*#725438;*/
   --color4: #e2954d;
   --color5: #253e38;
   --color6: #e7e6e7;
@@ -181,6 +181,7 @@ footer {
   text-decoration: none;
 }
 /******************** FRESH PAGE***************************/
+
 form fieldset {
   margin: 1em;
   border-radius: 10px;
@@ -225,8 +226,8 @@ form input[type="submit"] {
 .fruit-card {
   background-color: rgba(183, 185, 157, 0.5);
   text-align: left;
-  margin: 0.5em;
-  padding: 0.5em;
+  margin: 1em 0.5em;
+  padding: 1em;
   text-transform: capitalize;
   max-width: 25rem;
   border: 0.5px solid var(--color5);
@@ -245,4 +246,7 @@ form input[type="submit"] {
   margin: 1em;
   padding: 1em;
   text-align: left;
+}
+#order-results h2 {
+  margin: 0;
 }

@@ -47,6 +47,7 @@ function displayOrderResults(fields){
     const name = fields.fName.value;
     const email = fields.email.value;
     const phone = fields.cell.value;
+    const instructions = fields.instructions.value;
     const fruit1 = fruit[fields.fruit1.value];
     const fruit2 = fruit[fields.fruit2.value];
     const fruit3 = fruit[fields.fruit3.value];
@@ -75,13 +76,13 @@ function displayOrderResults(fields){
     phoneP.classList.add('label');
     phoneP.innerText = `Phone: ${phone}`;
     display.appendChild(phoneP);
+    
     //instructions
-    /*
     let instructionsP = document.createElement('p');
     instructionsP.classList.add('label');
-    instructionsP.innerText = 'Add instructions to form';
+    instructionsP.innerText = `Instructions: ${instructions}`;
     display.appendChild(instructionsP);
-    */
+    
     //fruit1
     var fruitString = createFruitHtml(fruit1,1);
     let fruit1P = document.createElement('p');
@@ -117,8 +118,8 @@ function displayOrderResults(fields){
 }
 
 function createNutritionString(item){
-    let str = `Carbohydrates: ${item.carbohydrates} Protein: ${item.protein} Fat: ${item.fat}
-    <br>Calories: ${item.calories} Sugar: ${item.sugar}`
+    let str = `Carbohydrates: ${item.carbohydrates.toFixed(2)} Protein: ${item.protein.toFixed(2)} Fat: ${item.fat.toFixed(2)}
+    <br>Calories: ${item.calories.toFixed(2)} Sugar: ${item.sugar.toFixed(2)}`
     totalCarb += item.carbohydrates;
     totalProtein += item.protein;
     totalFat += item.fat;
