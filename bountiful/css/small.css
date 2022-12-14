@@ -165,17 +165,17 @@ footer {
   margin: 1em;
   padding: 1em;
 }
-#contact-name {
-  /*color: var(--color5);*/
-  font-size: 1.5em;
-  height: 5vh;
-  font-family: "Holtwood One SC", serif;
+.contact {
   padding-left: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+#contact-name {
+  font-family: "Holtwood One SC", serif;
 }
 .social {
   padding: 0.5em;
-  justify-content: right;
-  text-align: right;
+  text-align: center;
 }
 .social a {
   text-decoration: none;

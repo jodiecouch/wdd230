@@ -6,6 +6,9 @@
   main {
     width: 1000px;
   }
+  main#home {
+    text-align: left;
+  }
   main > p {
     word-wrap: normal;
     width: fit-content;

@@ -6,6 +6,16 @@
   .footer-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .contact {
+    text-align: left;
+  }
+  #contact-name {
+    margin-left: -0.3em;
+  }
+  .social {
+    text-align: right;
   }
   .weather {
     display: flex;
