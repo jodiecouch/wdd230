@@ -68,6 +68,7 @@ nav ul.open {
 }
 #drinks-ordered.open {
   display: block;
+  text-align: left;
 }
 .order-card {
   border: solid 2px var(--color4);
@@ -75,7 +76,7 @@ nav ul.open {
   background-color: var(--color2);
   border-radius: 5px;
   margin: 2em 0.5em 0.5em 0.5em;
-  padding: 1.5em;
+  padding: 1.2em;
   display: block;
 
   text-align: center;

@@ -57,6 +57,10 @@
     display: block;
     width: 90%;
   }
+  #drinks-ordered,
+  #drinks-ordered.open {
+    text-align: center;
+  }
   nav ul.open {
     background-color: transparent;
   }
